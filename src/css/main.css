@@ -1,47 +1,206 @@
 .browserupgrade {
-
+    text-align: center;
+    padding: 10px 0px;
+    background-color: #ffa;
+    width: 100%;
 }
 .fullheader {
-	background-color: yellow;
+	background-color: #eff3f7;
+	height: 100%;
+	margin-bottom: 30px;
 }
 .mainheader {
-	background-color: orange;
-	width: 1200px;
+	max-width: 1200px;
+	min-width: 960px;
+	position: relative;
 	margin: 0 auto;
+	padding-top: 30px;
+	height: 86px;
 }
 .logo {
 	display: inline-block;
 	width: 320px;
+	position: absolute;
+	left: 0;
 }
 .social {
 	display: inline-block;
+	position: absolute;
+	right: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	min-width: 260px;
 }
-.soc {
-	text-align: right;
-}
-.soc li {
+.social-item {
 	display: inline-block;
-
+	width: 64px;
+}
+.hr-gradient {
+    height: 3px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eff3f7+0,1f687c+46,1f687c+53,eff3f7+100 */
+    background: #3ba8c0;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #eff3f7 0%, #1f687c 46%, #1f687c 53%, #eff3f7 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #eff3f7), color-stop(46%, #1f687c), color-stop(53%, #1f687c), color-stop(100%, #eff3f7));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, #eff3f7 0%, #1f687c 46%, #1f687c 53%, #eff3f7 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, #eff3f7 0%, #1f687c 46%, #1f687c 53%, #eff3f7 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, #eff3f7 0%, #1f687c 46%, #1f687c 53%, #eff3f7 100%);
+    /* IE10+ */
+    background: linear-gradient(to right, #eff3f7 0%, #1f687c 46%, #1f687c 53%, #eff3f7 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#eff3f7', endColorstr='#eff3f7', GradientType=1);
+    /* IE6-9 */
+}
+a, a:visited {
+	color: #959aa8;
+}
+.fullpage {
+	font-family: 'fira_sansregular', sans-serif;
+    background: #fbfcfd url(../img/comppattern2.png) repeat;
+    color: #58697a;
 }
 .page {
-	background-color: limegreen;
 	width: 960px;
 	margin: 0 auto;
+	padding-bottom: 100px;
 }
 .content {
 	width: 650px;
-	background-color: green;
 }
 .article {
-	background-color: grey;
+	background-color: #eff3f7;
+	border-radius: 5px;
+	padding-bottom: 10px;
+	margin-bottom: 15px;
+}
+.article-title {
+	display: inline-block;
+	padding: 5px 36px;
+	margin: 0;
+	font-size: 1.8em;
+	font-weight: bold;
+	border-bottom: 2px solid #3ba8c0;
+}
+.basic-info {
+}
+.myphoto {
+	display: inline-block;
+	overflow: hidden;
+	width: 140px;
+	height: 140px;
+	vertical-align: top;
+	margin: 20px;
+	border-radius: 50%;
+	border: 2px solid #3ba8c0;
+}
+.myinfo {
+}
+.info-list {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+	line-height: 1.8em;
+}
+.info-item {
+	position: relative;
+
+}
+.info-text-title {
+	display: inline-block;
+	vertical-align: top;
+	font-weight: bold;
+}
+.info-text {
+	display: inline-block;
+	width: 300px;
+	padding-left: 10px;
+}
+.skills {
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.skill {
+    display: inline-block;
+    border-radius: 3px;
+    color: #fff;
+    padding: 0 10px;
+    margin: 2px;
+    background-color: #3ba8c0;
+    background: transparent -webkit-linear-gradient(#3BA8C0 50%, #2E8CA2 50%) repeat scroll 0% 0%;
+    background: transparent -o-linear-gradient(#3BA8C0 50%, #2E8CA2 50%) repeat scroll 0% 0%;
+    background: transparent linear-gradient(#3BA8C0 50%, #2E8CA2 50%) repeat scroll 0% 0%;
 }
 .sidebar {
-	background-color: blue;
 	width: 250px;
 	position: relative;
+	font-size: 1.2em;
 }
-.footer {
-	background-color: brown;
+.fullfooter {
+	background-color: #eff3f7;
+	height: 78px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.mainfooter {
+	max-width: 1200px;
+	min-width: 960px;
+	position: relative;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+.login {
+	display: inline-block;
+	position: absolute;
+	left: 160px;
+	top: 24px;
+	text-indent: -9999px;
+}
+.copyright {
+	margin: 0 auto;
+	padding: 0;
+	min-width: 500px;
+	max-width: 800px;
+	text-align: center;
+}
+.sprite-sys {
+    background-image: url(../img/sprites-sys.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-close {
+    width: 25px;
+    height: 25px;
+    background-position: -5px -5px;
+}
+
+.sprite-download {
+    width: 32px;
+    height: 24px;
+    background-position: -82px -5px;
+}
+
+.sprite-lock-locked {
+    width: 20px;
+    height: 32px;
+    background-position: -89px -39px;
+}
+
+.sprite-lock-locked:hover,
+.sprite-lock-locked:active {
+    width: 20px;
+    height: 32px;
+    background-position: -119px -39px;
 }
 .flr {
   float: right;
@@ -49,6 +208,193 @@
 .fll {
   float: left;
 }
+.bold {
+	font-weight: bold;
+}
+/**************************************
+    Main menu
+ **************************************/
+.mainmenu {
+	background-color: #eff3f7;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.menu {
+
+}
+
+.menu-wrap {
+	padding: 0 15px;
+  	margin: 0 15px;
+  	border-bottom: 2px solid #3ba8c0;
+}
+.menu:last-child .menu-wrap {
+	border-bottom: none;
+}
+.mainmenu li a {
+	display: block;
+    margin: 0;
+    color: #959aa8;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+.mainmenu .active {
+	background-color: #3ba8c0;
+	margin-top: -2px;
+	padding-top: 2px;
+}
+.mainmenu .active a,
+.mainmenu .active a:hover,
+.mainmenu .active a:active {
+	color: #fff;
+}
+.mainmenu a:hover,
+.mainmenu a:active {
+	color: #3ba8c0;
+}
+.last {
+	border-bottom: none;
+}
+/**************************************
+    Contacts block
+ **************************************/
+.contacts {
+    list-style-type: none;
+    color: #fff;
+    padding: 0;
+    font-style: normal;
+}
+.contacts-title {
+    padding: 10px 0 10px 30px;
+    background-color: #3ba8c0;
+}
+.contacts li a {
+	display: block;
+    margin: 0;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+.contacts li a:hover,
+.contacts li a:active {
+    text-decoration: underline;
+}
+
+.contacts li:first-child {
+    border-radius: 5px 5px 0px 0px;
+}
+
+.contacts li:last-child {
+    border-radius: 0px 0px 5px 5px;
+}
+.icon_email {
+    padding-left: 65px;
+    background: #41b9d4 url(../img/contacts-mail.png) no-repeat 25px 8px;
+}
+
+.icon_phone {
+    padding-left: 65px;
+    background: #48cbe8 url(../img/contacts-phone.png) no-repeat 25px 8px;
+}
+
+.icon_skype {
+    padding-left: 65px;
+    background: #51daf8 url(../img/contacts-skype.png) no-repeat 25px 8px;
+}
+/* Список работа и учёба */
+.exp {
+	list-style: none;
+}
+.exp-item {
+	margin: 20px;
+}
+.exp-item .what {
+	padding-left: 64px;
+}
+.exp-item .when {
+	padding-left: 64px;
+	line-height: 1em;
+}
+.icon_educ {
+    background: url(../img/education.png) no-repeat 0 4px;
+}
+
+.icon_course {
+    background: url(../img/course.png) no-repeat 8px 4px;
+}
+
+.icon_case {
+    background: url(../img/briefcase.png) no-repeat 4px 4px;
+}
+/**************************************
+    social icons in sprite
+ **************************************/
+.sprite-soc {
+    background-image: url(../img/sprites-social.png);
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0 12px;
+	text-indent: -9999px;
+}
+
+.sprite-social-fb {
+    width: 48px;
+    height: 48px;
+    background-position: -4px -4px;
+}
+
+.sprite-social-fb:hover,
+.sprite-social-fb:active {
+    width: 48px;
+    height: 48px;
+    background-position: -61px -4px;
+}
+
+.sprite-social-github {
+    width: 48px;
+    height: 48px;
+    background-position: -4px -62px;
+}
+
+.sprite-social-github:hover,
+.sprite-social-github:active {
+    width: 48px;
+    height: 48px;
+    background-position: -61px -62px;
+}
+
+.sprite-social-tw {
+    width: 48px;
+    height: 48px;
+    background-position: -119px -4px;
+}
+
+.sprite-social-tw:hover,
+.sprite-social-tw:active {
+    width: 48px;
+    height: 48px;
+    background-position: -119px -61px;
+}
+
+.sprite-social-vk {
+    width: 48px;
+    height: 48px;
+    background-position: -4px -119px;
+}
+
+.sprite-social-vk:hover,
+.sprite-social-vk:active {
+    width: 48px;
+    height: 48px;
+    background-position: -61px -119px;
+}
+
 /**
  * For modern browsers
  * 1. The space content is one way to avoid an Opera bug when the
