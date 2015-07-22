@@ -1,0 +1,37 @@
+.container {
+	margin: 0 auto;
+}
+.gallery {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.gallery-item {
+	width: 28.66%;
+	margin: 2%;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+}
+.preview {
+	display: block;
+	margin-bottom: 5px;
+	border: 2px solid #3ba8c0;
+	border-radius: 5px;
+}
+.site-name {
+	font-size: smaller;
+	font-style: italic;
+}
+.desc {
+	font-size: small;
+}
+.new {
+
+}
+.new .preview {
+	width: 181px;
+	height: 127px;
+	border: 2px dashed #3ba8c0;
+
+}
