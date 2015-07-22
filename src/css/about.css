@@ -1,0 +1,82 @@
+/* ==========================================================================
+   Раздел "Общая информация" и фото
+   ========================================================================== */
+.basic-info {
+}
+.myphoto {
+	display: inline-block;
+	overflow: hidden;
+	width: 140px;
+	height: 140px;
+	vertical-align: top;
+	margin: 20px;
+	border-radius: 50%;
+	border: 2px solid #3ba8c0;
+}
+.myinfo {
+}
+.info-list {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+	line-height: 1.8em;
+}
+.info-item {
+	position: relative;
+}
+.info-text-title {
+	display: inline-block;
+	vertical-align: top;
+	font-weight: bold;
+}
+.info-text {
+	display: inline-block;
+	width: 300px;
+	padding-left: 10px;
+}
+.skills {
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.skill {
+    display: inline-block;
+    border-radius: 3px;
+    color: #fff;
+    padding: 0 10px;
+    margin: 2px;
+    background-color: #3ba8c0;
+    background: transparent -webkit-linear-gradient(#3BA8C0 50%, #2E8CA2 50%) repeat scroll 0% 0%;
+    background: transparent -o-linear-gradient(#3BA8C0 50%, #2E8CA2 50%) repeat scroll 0% 0%;
+    background: transparent linear-gradient(#3BA8C0 50%, #2E8CA2 50%) repeat scroll 0% 0%;
+}
+/* ==========================================================================
+   Стили и иконки для списков "Образование" и "Опыт"
+   ========================================================================== */
+.exp {
+	list-style: none;
+}
+.exp-item {
+	margin: 20px;
+}
+.exp-item .what {
+	padding-left: 64px;
+}
+.exp-item .when {
+	padding-left: 64px;
+	line-height: 1em;
+}
+.icon_educ {
+    background: url(../img/education.png) no-repeat 0 4px;
+}
+
+.icon_course {
+    background: url(../img/course.png) no-repeat 8px 4px;
+}
+
+.icon_case {
+    background: url(../img/briefcase.png) no-repeat 4px 4px;
+}
