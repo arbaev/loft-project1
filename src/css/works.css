@@ -3,7 +3,7 @@
 }
 .gallery {
 	list-style: none;
-	margin: 0;
+	margin: 20px 0 0;
 	padding: 0;
 }
 .gallery-item {
@@ -14,17 +14,33 @@
 	text-align: center;
 }
 .preview {
-	display: block;
 	margin-bottom: 5px;
 	border: 2px solid #3ba8c0;
 	border-radius: 5px;
+	display: inline-block;
+	overflow: hidden;
+	width: 186px;
+	height: 124px;
+	vertical-align: top;
+}
+/*	position: absolute;
+    top: 30px;
+    right: 74px;
+*/
+.add-project {
+	display: table-cell;
+	vertical-align: middle;
 }
 .site-name {
 	font-size: smaller;
 	font-style: italic;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
 }
 .desc {
 	font-size: small;
+	margin: 0;
 }
 .new {
 
@@ -33,5 +49,5 @@
 	width: 181px;
 	height: 127px;
 	border: 2px dashed #3ba8c0;
-
+	background-color: #edf8fc;
 }
