@@ -283,6 +283,7 @@ a, a:visited {
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 1500;
 }
 .mainfooter {
 	max-width: 1200px;
