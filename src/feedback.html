@@ -41,8 +41,45 @@
 <div class="page cf">
     <section class="content flr">
         <article class="article">
-            <h2 class="article-title">Есть интересный проект? Напишите мне</h2>
-
+            <h2 class="feedback-title">У Вас интересный проект? Напишите мне</h2>
+            <div class="wrapper">
+              <form action="#" class="user-form">
+                <div class="wrap-form-element cf">
+                  <div class="form-name fll">
+                    <label for="user-name" class="label">Имя</label>
+                    <input type="text" id="user-name" name="user-name" class="form-element"
+                    placeholder="Как к Вам обращаться" value="">
+                  </div>
+                  <div class="form-name flr">
+                    <label for="email" class="label">Email</label>
+                    <input type="email" id="email" name="email" class="form-element"
+                    placeholder="Куда мне ответить" value="">
+                  </div>
+                </div>
+                <div class="wrap-message">
+                  <label for="message" class="label">Сообщение</label>
+                  <textarea id="message" name="message" class="form-textarea" placeholder="Кратко в чём суть"></textarea>
+                </div>
+                <div class="wrap-captcha cf">
+                    <div class="captcha-img fll">
+                        <img src="img/captcha.jpg" height="60" width="200" alt="">
+                    </div>
+                    <div class="form-captcha flr">
+                        <label for="write-captcha" class="label">Введите текст с картинки</label>
+                        <input type="text" id="write-captcha" name="captcha" class="form-element"
+                        placeholder="" value="">
+                    </div>
+                </div>
+                <div class="wrap-form-element cf">
+                    <div class="wrap-reset-button fll">
+                      <input type="reset" id="reset-form" name="reset-form" class="submit-button rosecolor" value="Очистить">
+                    </div>
+                    <div class="wrap-submit-button flr">
+                      <input type="submit" id="submit-form" name="submit-form" class="submit-button bluecolor" value="Отправить">
+                    </div>
+                </div>
+              </form>
+            </div>
         </article>
     </section>
     <aside class="sidebar fll">
@@ -70,7 +107,6 @@
         <div class="login">
             <a class="sprite-sys sprite-lock-locked" href="/" title="Authorization">Authorization</a>
         </div>
-
     </div>
 </footer>
 </body>

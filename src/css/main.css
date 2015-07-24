@@ -9,8 +9,8 @@
 #fff    - links & text on active elements
 #3ba8c0 - contacts title bg
 #41b9d4 - contacts email bg
-#48cbe8 - contacts phone bg
-#51daf8 - contacts skype bg
+#48cbe8 - contacts phone bg, feedback page title
+#51daf8 - contacts skype bg, feedback page title border
 #edf8fc - add project bg
    */
 
@@ -167,6 +167,7 @@ a, a:visited {
 	border-radius: 5px;
 	padding-bottom: 10px;
 	margin-bottom: 15px;
+  overflow: hidden;
 }
 .article-title {
 	display: inline-block;
