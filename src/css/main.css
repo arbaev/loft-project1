@@ -5,7 +5,7 @@
 #959aa8 - hover links
 #fbfcfd - page background
 #58697a - text color
-#eff3f7 - header, footer, article & menu background
+#eff3f7 - header, footer, article & menu bg, login block bg
 #fff    - links & text on active elements
 #3ba8c0 - contacts title bg
 #41b9d4 - contacts email bg
@@ -23,8 +23,14 @@
     background-color: #ffa;
     width: 100%;
 }
-a, a:visited {
+a,
+a:visited {
 	color: #3ba8c0;
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  color: #959aa8;
 }
 .fullpage {
 	font-family: 'fira_sansregular', sans-serif;

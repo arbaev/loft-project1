@@ -1,0 +1,97 @@
+/* ==========================================================================
+   Login page styles
+   ========================================================================== */
+.loginpage {
+    width: 590px;
+    padding: 8% 0px 0px;
+    margin: auto;
+	margin-bottom: 100px;
+
+}
+.loginblock {
+    margin-top: 20px;
+    margin-left: 0px;
+    font-weight: 400;
+    overflow: hidden;
+   	background-color: #eff3f7;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 8px 0px rgba(64,64,64,0.75);
+	-moz-box-shadow: 0px 0px 8px 0px rgba(64,64,64,0.75);
+	box-shadow: 0px 0px 8px 0px rgba(64,64,64,0.75);
+}
+.login-title {
+    margin: 0;
+    padding: 30px;
+    color: #fff;
+    text-align: center;
+	font-weight: normal;
+    background-color: #48cbe8;
+    border-bottom: 16px solid #51daf8;
+}
+.login-form {
+	width: 90%;
+	margin: 30px auto 0;
+}
+::-webkit-input-placeholder {
+    opacity: .5;
+    color: #3ba8c0;
+}
+::-moz-placeholder {
+    opacity: .5;
+    color: #3ba8c0;
+}
+:-moz-placeholder {
+    opacity: .5;
+    color: #3ba8c0;
+}
+:-ms-input-placeholder {
+    opacity: .5;
+    color: #3ba8c0;
+}
+.form-login-element {
+	border: 1px solid #3ba8c0;
+	border-radius: 3px;
+    padding: 1em;
+    width: 94%;
+    outline: none;
+    margin: 0 auto;
+    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+.wrap-submit-button {
+	text-align: center;
+	margin: 30px auto;
+}
+.submit-button {
+    font-size: 1.5em;
+    width: 8em;
+    padding: 5px 20px;
+    position: relative;
+	border-radius: 10px;
+	color: #FFF;
+	text-decoration: none;
+	outline: none;
+}
+.bluecolor {
+	background-color: #48cbe8;
+	border-bottom: 5px solid #3ba8c0;
+	text-shadow: 0px -2px #3ba8c0;
+}
+.submit-button:active {
+	transform: translate(0px,5px);
+ 	-webkit-transform: translate(0px,5px);
+	border-bottom: 1px solid;
+	margin-bottom: 4px;
+}
+.label-title {
+	display: block;
+	text-align: center;
+	font-size: 2em;
+	margin: 10px auto 0px;
+}
+.login-menu {
+	list-style-type: none;
+	line-height: 2em;
+}
