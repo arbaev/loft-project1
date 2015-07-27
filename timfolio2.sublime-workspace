@@ -139,15 +139,7 @@
 			"file": "/x/loft/timfolio2/src/login.html",
 			"settings":
 			{
-				"buffer_size": 2612,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/x/loft/timfolio2/src/feedback.html",
-			"settings":
-			{
-				"buffer_size": 5507,
+				"buffer_size": 2904,
 				"line_ending": "Windows"
 			}
 		},
@@ -155,15 +147,7 @@
 			"file": "/x/loft/timfolio2/src/css/login.css",
 			"settings":
 			{
-				"buffer_size": 2137,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/x/loft/timfolio2/src/css/feedback.css",
-			"settings":
-			{
-				"buffer_size": 2085,
+				"buffer_size": 2894,
 				"line_ending": "Windows"
 			}
 		},
@@ -171,7 +155,7 @@
 			"file": "/x/loft/timfolio2/src/css/main.css",
 			"settings":
 			{
-				"buffer_size": 9234,
+				"buffer_size": 9263,
 				"line_ending": "Windows"
 			}
 		}
@@ -221,16 +205,18 @@
 	"expanded_folders":
 	[
 		"/x/loft/timfolio2",
-		"/x/loft/timfolio2/node_modules/browser-sync/node_modules",
-		"/x/loft/timfolio2/node_modules/browser-sync/node_modules/lodash",
 		"/x/loft/timfolio2/src",
 		"/x/loft/timfolio2/src/css"
 	],
 	"file_history":
 	[
-		"/x/loft/timfolio2/README.md",
-		"/x/loft/timfolio2/src/feedback.html",
+		"/C/00/nf_subs_27.07.2015 16_56_31.csv",
+		"/C/00/akusherstvo_products_20150725_133404.csv",
 		"/x/loft/timfolio2/src/index.html",
+		"/x/loft/timfolio2/README.md",
+		"/x/loft/timfolio2/src/css/feedback.css",
+		"/x/loft/timfolio2/src/feedback.html",
+		"/C/00/nf_subs_26.07.2015 23_57_00.csv",
 		"/x/loft/timfolio2/src/login.html",
 		"/x/loft/timfolio2/src/works.html",
 		"/X/loft/timfolio2/src/feedback.html",
@@ -351,11 +337,7 @@
 		"/c/Users/Tim/Documents/Dropbox/home/timfolio/bower.json",
 		"/C/Users/Tim/Documents/Dropbox/home/portfolio/src/index.html",
 		"/C/Users/Tim/Documents/Dropbox/home/portfolio/gulpfile.js",
-		"/C/Users/Tim/Documents/Dropbox/home/testworkflow/package.json",
-		"/C/Users/Tim/Documents/Dropbox/home/testworkflow/bower.json",
-		"/C/Users/Tim/Documents/Dropbox/home/testworkflow/node_modules/gulp/index.js",
-		"/C/Users/Tim/Documents/Dropbox/home/portfolio/package.json",
-		"/C/Users/Tim/Documents/Dropbox/home/portfolio/npm-debug.log"
+		"/C/Users/Tim/Documents/Dropbox/home/testworkflow/package.json"
 	],
 	"find":
 	{
@@ -508,7 +490,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -517,15 +499,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2612,
+						"buffer_size": 2904,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1974,
-								1974
+								2034,
+								2034
 							]
 						],
 						"settings":
@@ -599,104 +581,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 642.0,
+						"translation.y": 742.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/x/loft/timfolio2/src/feedback.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5507,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4139,
-								3926
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme.tmTheme",
-							"incomplete_sync": null,
-							"is_xml": false,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1575.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -706,20 +594,20 @@
 			"sheets":
 			[
 				{
-					"buffer": 2,
+					"buffer": 1,
 					"file": "/x/loft/timfolio2/src/css/login.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2137,
+						"buffer_size": 2894,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								86,
-								86
+								2368,
+								2368
 							]
 						],
 						"settings":
@@ -788,123 +676,32 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/CSS/CSS.tmLanguage"
-						},
-						"translation.x": 35.0,
-						"translation.y": -0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/x/loft/timfolio2/src/css/feedback.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2085,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								183
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme.tmTheme",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
 							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2475.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 2,
 					"file": "/x/loft/timfolio2/src/css/main.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9234,
+						"buffer_size": 9263,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								962,
-								962
+								577,
+								570
 							]
 						],
 						"settings":
@@ -977,10 +774,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 75.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -1066,7 +863,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
