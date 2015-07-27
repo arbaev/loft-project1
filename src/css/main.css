@@ -12,6 +12,7 @@
 #48cbe8 - contacts phone bg, feedback page title
 #51daf8 - contacts skype bg, feedback page title border
 #edf8fc - add project bg
+#f97e76 - error tooltips bg
    */
 
 /* ==========================================================================
@@ -230,6 +231,7 @@ a:active {
 .mainmenu .active a:hover,
 .mainmenu .active a:active {
 	color: #fff;
+
 }
 .mainmenu a:hover,
 .mainmenu a:active {
