@@ -6,7 +6,7 @@
 #fbfcfd - page background
 #58697a - text color
 #eff3f7 - header, footer, article & menu bg, login block bg
-#fff    - links & text on active elements
+#f9fafb - links & text on active elements
 #3ba8c0 - contacts title bg
 #41b9d4 - contacts email bg
 #48cbe8 - contacts phone bg, feedback page title
@@ -288,10 +288,11 @@ body:before {
 .article-title {
     display: inline-block;
     padding: 5px 36px;
-    margin: 0 0 15px 0;
+    margin: 5px 0 15px 0;
     font-size: 1.8em;
-    font-weight: bold;
+    font-weight: normal;
     border-bottom: 2px solid #3ba8c0;
+    color: #3ba8c0;
 }
 
 
@@ -309,9 +310,10 @@ body:before {
 /* ==========================================================================
    Menu
    ========================================================================== */
+
 .sidemenu {
     list-style: none;
-    background-color: #eff3f7;
+    background: #eff3f7;
     border-radius: 5px;
     margin-top: 0;
     padding: 0;
@@ -319,81 +321,76 @@ body:before {
     font-size: 1.1em;
 }
 
-.sidemenu-item {
-}
-
-.sidemenu-link {
-    color: #959aa8 !important;
-    text-decoration: none;
-}
-
-.sidemenu-link:hover,
-.sidemenu-link:active {
-    color: #3ba8c0 !important;
-    text-decoration: none;
-}
-
-.sidemenu-block {
+.sidemenu .sidemenu-item {
     border-top: 2px solid #3ba8c0;
-    padding: 25px 5px 20px 12px;
     margin: 0 20px;
+}
+
+.sidemenu .sidemenu-item:first-child {
+    border-top: 2px solid transparent;
+    margin: 0 20px;
+}
+
+.sidemenu .sidemenu-link {
+    display: block;
+    color: #959aa8;
+    text-decoration: none;
+    padding: 25px 5px 20px 12px;
     white-space: nowrap;
 }
 
-.sidemenu-item:first-child .sidemenu-block {
-    border-top: none;
+.sidemenu .sidemenu-link:hover {
+    color: #3ba8c0;
 }
 
-.sidemenu .active {
-    background-color: #3ba8c0;
-    color: #fff !important;
-    display: block;
+.sidemenu .sidemenu-item.active {
+    background: #3ba8c0;
+    margin: 0;
     margin-bottom: -2px;
-    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 20px;
 }
 
-/* поднять на 2px текст меню для активного блока */
-.sidemenu .active .sidemenu-block {
-    padding: 23px 5px 22px 12px;
-}
-
-/* хак для IE8, в котором margin:1px = padding:2px; для первого чайлда */
-.sidemenu-item:first-child .active .sidemenu-block {
-    padding-top: 22px\0/;
+.sidemenu .sidemenu-item.active .sidemenu-link {
+    color: #f9fafb;
 }
 
 /* ==========================================================================
    Contacts
    ========================================================================== */
+
 .contacts {
-    list-style-type: none;
-    background-color: #3ba8c0;
+    background: #3ba8c0;
     border-radius: 5px;
     margin-top: 0;
-    padding: 0;
+    margin-bottom: 40px;
     overflow: hidden;
-    font-size: 1.1em;
+    font-size: .9em;
     font-style: normal;
 }
-.contacts-item {}
 
-.contacts-link {}
-
-.contacts-link:hover,
-.contacts-link:active {
-    color: #fff;
-    text-decoration: underline;
+.contacts .contacts-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-.contacts-block {
+.contacts .contacts-item {
+}
+
+.contacts .title {
     color: #fff;
-    font-size: 0.9em;
+    font-size: 1.1em;
+    padding-left: 30px;
     padding-top: 12px;
     padding-bottom: 12px;
 }
 
-.contacts .title {
-    padding-left: 25px;
+.contacts .contacts-link {
+    color: #fff;
+    display: block;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 .icon-email {
