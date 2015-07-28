@@ -1,10 +1,12 @@
 /* ==========================================================================
    MyWorks page styles
    ========================================================================== */
+
 .container {
 	margin: 30px auto;
 	text-align: justify;
 }
+
 .gallery-item {
 	width: 30%;
 	margin: 0 8px 30px;
@@ -14,6 +16,7 @@
 	overflow: hidden;
 	vertical-align: top;
 }
+
 .gallery-img {
 	z-index: 1000;
 	position: relative;
@@ -26,6 +29,7 @@
 	height: 124px;
 	vertical-align: top;
 }
+
 .hoverfx {
     z-index: 1002;
     background-color: #3ba8c0;
@@ -38,13 +42,16 @@
 	height: 100%;
 	top: 0;
 }
+
 .hoverfx:hover,
 .hoverfx:active {
 	opacity: 0.75;
 }
+
 .ie8 .hoverfx {
 	display: none;
 }
+
 .hoverfx-inside {
     width: 100px;
     margin: 44px auto 0;
@@ -53,19 +60,10 @@
     border-radius: 5px;
     border: 2px solid #fff;
 }
-.caption p {
-	margin: 0;
-}
+
 .add-project {
 	display: table-cell;
 	vertical-align: middle;
 	border: 2px dashed #3ba8c0;
 	background-color: #edf8fc;
-}
-.gallery-item a {
-	text-decoration: none;
-}
-.add-link div:hover,
-.add-link div:active {
-	text-decoration: underline;
 }

@@ -39,7 +39,7 @@ a:visited {
 
 a:hover,
 a:active {
-    color: #959aa8;
+    text-decoration: underline;
 }
 
 .maincontainer {
@@ -321,7 +321,15 @@ body:before {
 .sidemenu-item {
 }
 
-.sidemenu-link {}
+.sidemenu-link {
+    text-decoration: none;
+}
+
+.sidemenu-link:hover,
+.sidemenu-link:active {
+    color: #959aa8;
+    text-decoration: none;
+}
 
 .sidemenu-block {
     border-top: 2px solid #3ba8c0;
@@ -354,58 +362,51 @@ body:before {
 /* ==========================================================================
    Contacts
    ========================================================================== */
-
 .contacts {
     list-style-type: none;
-    color: #fff;
+    background-color: #3ba8c0;
+    border-radius: 5px;
+    margin-top: 0;
     padding: 0;
+    overflow: hidden;
+    font-size: 1.1em;
     font-style: normal;
 }
+.contacts-item {}
 
-.contacts-title {
-    padding: 10px 0 10px 30px;
-    background-color: #3ba8c0;
-}
+.contacts-link {}
 
-.contacts li a {
-    display: block;
-    margin: 0;
+.contacts-link:hover,
+.contacts-link:active {
     color: #fff;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-decoration: none;
-}
-
-.contacts li a:hover,
-.contacts li a:active {
     text-decoration: underline;
 }
 
-.contacts li:first-child {
-    border-radius: 5px 5px 0px 0px;
+.contacts-block {
+    color: #fff;
+    font-size: 0.9em;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
-.contacts li:last-child {
-    border-radius: 0px 0px 5px 5px;
+.contacts .title {
+    padding-left: 25px;
 }
 
-.icon_email {
+.icon-email {
     padding-left: 65px;
-    background: #41b9d4 url(../img/contacts-mail.png) no-repeat 25px 8px;
+    background: #41b9d4 url(../img/contacts-mail.png) no-repeat 25px 10px;
 }
 
-.icon_phone {
+.icon-phone {
     padding-left: 65px;
-    background: #48cbe8 url(../img/contacts-phone.png) no-repeat 25px 8px;
+    background: #48cbe8 url(../img/contacts-phone.png) no-repeat 25px 10px;
 }
 
-.icon_skype {
+.icon-skype {
     padding-left: 65px;
-    background: #51daf8 url(../img/contacts-skype.png) no-repeat 25px 8px;
+    background: #51daf8 url(../img/contacts-skype.png) no-repeat 25px 10px;
 }
-
-
-
 
 /* ==========================================================================
    Неиспользуемые (пока) элементы
