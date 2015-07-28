@@ -323,12 +323,13 @@ body:before {
 }
 
 .sidemenu-link {
+    color: #959aa8 !important;
     text-decoration: none;
 }
 
 .sidemenu-link:hover,
 .sidemenu-link:active {
-    color: #959aa8;
+    color: #3ba8c0 !important;
     text-decoration: none;
 }
 
@@ -345,7 +346,7 @@ body:before {
 
 .sidemenu .active {
     background-color: #3ba8c0;
-    color: #fff;
+    color: #fff !important;
     display: block;
     margin-bottom: -2px;
     padding-top: 2px;
