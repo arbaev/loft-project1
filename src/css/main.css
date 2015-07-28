@@ -15,135 +15,165 @@
 #f97e76 - error tooltips bg
    */
 
+
 /* ==========================================================================
    Common styles
    ========================================================================== */
+
 .browserupgrade {
     text-align: center;
     padding: 10px 0px;
     background-color: #ffa;
     width: 100%;
 }
+
 a,
 a:visited {
-	color: #3ba8c0;
-  text-decoration: none;
+    color: #3ba8c0;
+    text-decoration: none;
 }
+
 a:hover,
 a:active {
-  color: #959aa8;
+    color: #959aa8;
 }
+
 .fullpage {
-	font-family: 'fira_sansregular', sans-serif;
+    font-family: 'fira_sansregular', sans-serif;
     background: #fbfcfd url(../img/comppattern2.png) repeat;
     color: #58697a;
 }
+
 .page {
-	width: 960px;
-	margin: 0 auto;
-	padding-bottom: 100px;
+    width: 960px;
+    margin: 0 auto;
+    padding-bottom: 100px;
 }
+
 .flr {
-  float: right;
+    float: right;
 }
+
 .fll {
-  float: left;
+    float: left;
 }
+
 .bold {
-	font-weight: bold;
+    font-weight: bold;
 }
+
+
 /* ==========================================================================
    Header
    ========================================================================== */
+
 .fullheader {
-	background-color: #eff3f7;
-	height: 100%;
-	margin-bottom: 30px;
+    background-color: #eff3f7;
+    height: 100%;
+    margin-bottom: 30px;
 }
+
 .mainheader {
-	max-width: 1200px;
-	min-width: 960px;
-	position: relative;
-	margin: 0 auto;
-	padding-top: 30px;
-	height: 86px;
+    max-width: 1200px;
+    min-width: 960px;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 30px;
+    height: 86px;
 }
+
 .logo {
-	display: inline-block;
-	width: 320px;
-	position: absolute;
-	left: 0;
+    display: inline-block;
+    width: 320px;
+    position: absolute;
+    left: 0;
 }
+
 .social {
-	display: inline-block;
-	position: absolute;
-	right: 0;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	min-width: 260px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-width: 260px;
 }
+
 .social-item {
-	display: inline-block;
-	width: 64px;
+    display: inline-block;
+    width: 64px;
 }
+
+
 /* ==========================================================================
    Social icons in sprite
    ========================================================================== */
+
 .sprite-soc {
     background-image: url(../img/sprites-social.png);
     background-repeat: no-repeat;
     display: block;
     margin: 0 12px;
-	text-indent: -9999px;
+    text-indent: -9999px;
 }
+
 .sprite-social-fb {
     width: 48px;
     height: 48px;
     background-position: -4px -4px;
 }
+
 .sprite-social-fb:hover,
 .sprite-social-fb:active {
     width: 48px;
     height: 48px;
     background-position: -61px -4px;
 }
+
 .sprite-social-github {
     width: 48px;
     height: 48px;
     background-position: -4px -62px;
 }
+
 .sprite-social-github:hover,
 .sprite-social-github:active {
     width: 48px;
     height: 48px;
     background-position: -61px -62px;
 }
+
 .sprite-social-tw {
     width: 48px;
     height: 48px;
     background-position: -119px -4px;
 }
+
 .sprite-social-tw:hover,
 .sprite-social-tw:active {
     width: 48px;
     height: 48px;
     background-position: -119px -61px;
 }
+
 .sprite-social-vk {
     width: 48px;
     height: 48px;
     background-position: -4px -119px;
 }
+
 .sprite-social-vk:hover,
 .sprite-social-vk:active {
     width: 48px;
     height: 48px;
     background-position: -61px -119px;
 }
+
+
 /* ==========================================================================
    Gradient stripe http://colorzilla.com/gradient-editor/#eff3f7+0,1f687c+46,1f687c+53,eff3f7+100
    ========================================================================== */
+
 .hr-gradient {
     height: 3px;
     background: #3ba8c0;
@@ -163,190 +193,220 @@ a:active {
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#eff3f7', endColorstr='#eff3f7', GradientType=1);
     /* IE6-9 */
 }
+
+
 /* ==========================================================================
    Main content
    ========================================================================== */
+
 .content {
-	width: 650px;
+    width: 650px;
 }
+
 .article {
-	background-color: #eff3f7;
-	border-radius: 5px;
-	padding-bottom: 10px;
-	margin-bottom: 15px;
-  overflow: hidden;
+    background-color: #eff3f7;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    overflow: hidden;
 }
+
 .article-title {
-	display: inline-block;
-	padding: 5px 36px;
-	margin: 0;
-	font-size: 1.8em;
-	font-weight: bold;
-	border-bottom: 2px solid #3ba8c0;
+    display: inline-block;
+    padding: 5px 36px;
+    margin: 0;
+    font-size: 1.8em;
+    font-weight: bold;
+    border-bottom: 2px solid #3ba8c0;
 }
+
+
 /* ==========================================================================
    Sidebar
    ========================================================================== */
+
 .sidebar {
-	width: 250px;
-	position: relative;
-	font-size: 1.2em;
+    width: 250px;
+    position: relative;
+    font-size: 1.2em;
 }
+
+
 /* ==========================================================================
-   Main menu
+   Menu
    ========================================================================== */
-.mainmenu {
-	background-color: #eff3f7;
-	list-style: none;
-	margin: 0;
-	padding: 0;
+.sidemenu {
+    list-style: none;
+    background-color: #eff3f7;
     border-radius: 5px;
+    padding: 0;
     overflow: hidden;
+    font-size: 1.1em;
 }
-.menu {
 
+.sidemenu-item {
 }
-.menu-wrap {
-	padding: 0 15px;
-  	margin: 0 15px;
-  	border-bottom: 2px solid #3ba8c0;
-}
-.menu:last-child .menu-wrap {
-	border-bottom: none;
-}
-.mainmenu li a {
-  	display: block;
-    margin: 0;
-    color: #3ba8c0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-decoration: none;
-}
-.mainmenu .active {
-	background-color: #3ba8c0;
-	margin-top: -2px;
-	padding-top: 2px;
-}
-.mainmenu .active a,
-.mainmenu .active a:hover,
-.mainmenu .active a:active {
-	color: #fff;
 
+.sidemenu-link {}
+
+.sidemenu-block {
+    border-top: 2px solid #3ba8c0;
+    padding: 25px 5px 20px 12px;
+    margin: 0 20px;
 }
-.mainmenu a:hover,
-.mainmenu a:active {
-	color: #959aa8;
+
+.sidemenu-item:first-child .sidemenu-block {
+    border-top: none;
 }
-.last {
-	border-bottom: none; /* for IE8 */
+
+.sidemenu .active {
+    background-color: #3ba8c0;
+    color: #fff;
+    display: block;
+    margin-bottom: -2px;
+    padding-top: 2px;
 }
+
+/* поднять на 2px текст меню для активного блока */
+.sidemenu .active .sidemenu-block {
+    padding: 23px 5px 22px 12px;
+    /* хак для IE8, в котором margin:1px = padding:2px; */
+    padding-top: 24px\0/;
+}
+
 /* ==========================================================================
    Contacts
    ========================================================================== */
+
 .contacts {
     list-style-type: none;
     color: #fff;
     padding: 0;
     font-style: normal;
 }
+
 .contacts-title {
     padding: 10px 0 10px 30px;
     background-color: #3ba8c0;
 }
+
 .contacts li a {
-	display: block;
+    display: block;
     margin: 0;
     color: #fff;
     padding-top: 10px;
     padding-bottom: 10px;
     text-decoration: none;
 }
+
 .contacts li a:hover,
 .contacts li a:active {
     text-decoration: underline;
 }
+
 .contacts li:first-child {
     border-radius: 5px 5px 0px 0px;
 }
+
 .contacts li:last-child {
     border-radius: 0px 0px 5px 5px;
 }
+
 .icon_email {
     padding-left: 65px;
     background: #41b9d4 url(../img/contacts-mail.png) no-repeat 25px 8px;
 }
+
 .icon_phone {
     padding-left: 65px;
     background: #48cbe8 url(../img/contacts-phone.png) no-repeat 25px 8px;
 }
+
 .icon_skype {
     padding-left: 65px;
     background: #51daf8 url(../img/contacts-skype.png) no-repeat 25px 8px;
 }
+
+
 /* ==========================================================================
    Footer
    ========================================================================== */
+
 .fullfooter {
-	background-color: #eff3f7;
-	height: 78px;
+    background-color: #eff3f7;
+    height: 78px;
     position: fixed;
     bottom: 0;
     width: 100%;
     z-index: 1500;
 }
+
 .mainfooter {
-	max-width: 1200px;
-	min-width: 960px;
-	position: relative;
-	margin: 0 auto;
-	padding-top: 30px;
+    max-width: 1200px;
+    min-width: 960px;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 30px;
 }
+
 .login {
-	display: inline-block;
-	position: absolute;
-	left: 160px;
-	top: 24px;
-	text-indent: -9999px;
+    display: inline-block;
+    position: absolute;
+    left: 160px;
+    top: 24px;
+    text-indent: -9999px;
 }
+
 .copyright {
-	margin: 0 auto;
-	padding: 0;
-	min-width: 500px;
-	max-width: 800px;
-	text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    min-width: 500px;
+    max-width: 800px;
+    text-align: center;
 }
+
 .sprite-sys {
     background-image: url(../img/sprites-sys.png);
     background-repeat: no-repeat;
     display: block;
 }
+
 .sprite-lock-locked {
     width: 20px;
     height: 32px;
     background-position: -89px -39px;
 }
+
 .sprite-lock-locked:hover,
 .sprite-lock-locked:active {
     width: 20px;
     height: 32px;
     background-position: -119px -39px;
 }
+
+
 /* ==========================================================================
    Неиспользуемые (пока) элементы
    ========================================================================== */
+
 .sprite-close {
     width: 25px;
     height: 25px;
     background-position: -5px -5px;
 }
+
 .sprite-download {
     width: 32px;
     height: 24px;
     background-position: -82px -5px;
 }
+
+
 /* ==========================================================================
    Micro clearfix hack by Nicolas Gallagher
    ========================================================================== */
+
+
 /**
  * For modern browsers
  * 1. The space content is one way to avoid an Opera bug when the
@@ -356,20 +416,25 @@ a:active {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
+
 .cf:before,
 .cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
 }
 
 .cf:after {
     clear: both;
 }
 
+
 /**
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
+
 .cf {
     *zoom: 1;
 }
