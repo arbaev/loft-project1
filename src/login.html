@@ -22,38 +22,53 @@
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-<section class="loginpage">
-    <div class="loginblock">
-        <h1 class="login-title">Авторизация</h1>
-        <form action="#" class="login-form">
-            <div class="wrap-form-element">
-                <div class="form-login">
-                    <label for="user-login" class="label-title">Логин</label>
-                    <div class="tooltip-wrap">
-                        <input type="text" id="user-login" name="user-login" class="form-login-element" placeholder="Введите логин" value="">
-                        <span class="tooltip">Введите логин</span>
+<div class="maincontainer">
+    <div class="page">
+
+        <section class="loginpage">
+            <div class="loginblock">
+                <h1 class="login-title">Авторизация</h1>
+                <form action="#" class="login-form">
+                    <div class="wrap-form-element">
+
+                        <div class="form-login">
+                            <label for="user-login" class="label-title">Логин</label>
+                            <div class="tooltip-wrap">
+                                <input type="text" id="user-login" name="user-login" class="form-login-element" placeholder="Введите логин" value="">
+                                <span class="tooltip">Введите логин</span>
+                            </div>
+                        </div>
+
+                        <div class="form-pass">
+                            <label for="password" class="label-title">Пароль</label>
+                             <div class="tooltip-wrap">
+                                <input type="password" id="password" name="password" class="form-login-element" placeholder="Введите пароль" value="">
+                                <span class="tooltip">Введите пароль</span>
+                            </div>
+                        </div>
+
+                        <div class="wrap-submit-button">
+                            <input type="submit" id="submit-form" name="submit-form" class="submit-button bluecolor" value="Войти">
+                        </div>
+
                     </div>
-                </div>
-                <div class="form-pass">
-                    <label for="password" class="label-title">Пароль</label>
-                     <div class="tooltip-wrap">
-                        <input type="password" id="password" name="password" class="form-login-element" placeholder="Введите пароль" value="">
-                        <span class="tooltip">Введите пароль</span>
-                    </div>
-                </div>
-                <div class="wrap-submit-button">
-                    <input type="submit" id="submit-form" name="submit-form" class="submit-button bluecolor" value="Войти">
-                </div>
+                </form>
+
             </div>
-        </form>
+
+
+            <nav>
+                <ul class="login-menu">
+                    <li class="login-menu-item"><a href="#">Забыли пароль?</a></li>
+                    <li class="login-menu-item"><a href="/">&laquo; Вернуться на главную</a></li>
+                </ul>
+            </nav>
+
+        </section>
     </div>
-    <nav>
-        <ul class="login-menu">
-            <li class="login-menu-item"><a href="#">Забыли пароль?</a></li>
-            <li class="login-menu-item"><a href="/">&laquo; Вернуться на главную</a></li>
-        </ul>
-    </nav>
-</section>
+</div>
+
+
 <footer class="fullfooter">
     <div class="hr-gradient"></div>
     <div class="mainfooter">
@@ -64,5 +79,6 @@
 
     </div>
 </footer>
+
 </body>
 </html>
