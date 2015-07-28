@@ -157,9 +157,10 @@ body:before {
 
 .logo {
     display: inline-block;
-    width: 320px;
     position: absolute;
     left: 0;
+    height: 43px;
+    width:243px;
 }
 
 .social {
@@ -287,7 +288,7 @@ body:before {
 .article-title {
     display: inline-block;
     padding: 5px 36px;
-    margin: 0;
+    margin: 0 0 15px 0;
     font-size: 1.8em;
     font-weight: bold;
     border-bottom: 2px solid #3ba8c0;
@@ -335,6 +336,7 @@ body:before {
     border-top: 2px solid #3ba8c0;
     padding: 25px 5px 20px 12px;
     margin: 0 20px;
+    white-space: nowrap;
 }
 
 .sidemenu-item:first-child .sidemenu-block {
