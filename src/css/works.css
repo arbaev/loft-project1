@@ -45,7 +45,6 @@
     transition: all 0.2s ease-in-out 0s;
     opacity: 0;
     color: white;
-    cursor: pointer;
     position: absolute;
 	width: 100%;
 	height: 100%;
@@ -83,10 +82,12 @@
 }
 
 .works-item.add-project .add-link {
-    padding: 70px 5px;
     display: inline-block;
+    width: 179px;
+    height: 125px;
+    padding-top: 70px;
 }
 
 .icon-addproject {
-    background: url(../img/add-project.png) no-repeat 70px 34px;
+    background: url(../img/add-project.png) no-repeat 75px 34px;
 }
