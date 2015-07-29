@@ -1,104 +1,55 @@
 /* ==========================================================================
    Feedback page styles
    ========================================================================== */
+
 .feedback-title {
     margin: 0;
     padding: 30px;
     color: #fff;
     text-align: center;
-	font-weight: normal;
+    font-weight: normal;
     background-color: #48cbe8;
     border-bottom: 16px solid #51daf8;
 }
+
 .wrapper {
-	margin: 30px auto;
+    margin: 30px auto;
 }
+
 .user-form {
-	width: 90%;
-	margin: 0 auto;
-}
-::-webkit-input-placeholder {
-    opacity: .5;
-    color: #3ba8c0;
-}
-::-moz-placeholder {
-    opacity: .5;
-    color: #3ba8c0;
-}
-:-moz-placeholder {
-    opacity: .5;
-    color: #3ba8c0;
-}
-:-ms-input-placeholder {
-    opacity: .5;
-    color: #3ba8c0;
-}
-.form-element,
-.form-textarea {
-	border: 1px solid #3ba8c0;
-	border-radius: 3px;
-    padding: 1em;
-    width: 88%;
-    outline: none;
+    width: 90%;
     margin: 0 auto;
-    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
 }
+
 .form-textarea {
     width: 94.5%;
     height: 150px;
-    resize: vertical;
 }
-.label {
-	display: block;
-}
+
 .form-name {
-	width: 48%;
+    width: 48%;
 }
+
 .wrap-form-element,
 .wrap-message {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
+
 .wrap-captcha {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
+
 .form-captcha {
-	width: 48%;
+    width: 48%;
     display: inline-block;
     vertical-align: top;
 }
+
 .captcha-img {
-	margin: 16px auto;
+    margin: 16px auto;
     display: inline-block;
     width: 48%;
     text-align: center;
 }
-.submit-button {
-    font-size: 1.5em;
-    width: 8em;
-    position: relative;
-    padding: 5px 20px;
-  	margin: 0;
-	border-radius: 10px;
-	color: #FFF;
-	text-decoration: none;
-	outline: none;
-}
-.bluecolor {
-	background-color: #48cbe8;
-	border-bottom: 5px solid #3ba8c0;
-	text-shadow: 0px -2px #3ba8c0;
-}
-.rosecolor {
-	background-color: #cc646b;
-	border-bottom: 5px solid #a95258;
-	text-shadow: 0px -2px #a95258;
-}
-.submit-button:active {
-	transform: translate(0px,5px);
- 	-webkit-transform: translate(0px,5px);
-	border-bottom: 1px solid;
-	margin-bottom: 4px;
-}
+
+

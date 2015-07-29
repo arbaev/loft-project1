@@ -1,0 +1,97 @@
+/* ==========================================================================
+   Add Project window styles
+   ========================================================================== */
+
+.add-wrap {
+	width: 360px;
+    background: #eff3f7;
+    margin-bottom: 50px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 18px 0px rgba(64,64,64,0.75);
+	-moz-box-shadow: 0px 0px 18px 0px rgba(64,64,64,0.75);
+	box-shadow: 0px 0px 18px 0px rgba(64,64,64,0.75);
+}
+
+.add {
+    padding: 0 20px 1px;
+}
+
+/*.add .form-element,
+.add .form-textarea {
+    border: 1px solid #48cbe8;
+    border-radius: 3px;
+    padding: .5em;
+    margin-bottom: 20px;
+    width: 100%;
+    outline: none;
+    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}*/
+
+/*.add .label {
+    display: block;
+    font-size: 1.2em;
+}*/
+
+.add-wrap .add-title {
+	position: relative;
+	font-size: 1.6em;
+    margin-bottom: 20px;
+    padding-left: .5em;
+    color: #eff3f7;
+    text-align: left;
+    font-weight: normal;
+    background: #48cbe8;
+    border-bottom: 10px solid #51daf8;
+}
+
+.add-title .add-close {
+	display: block;
+	position: absolute;
+	right: 8px;
+	top: 8px;
+    text-indent: -9999px;
+}
+
+.sprite-close {
+    width: 25px;
+    height: 25px;
+    background-position: -5px -5px;
+}
+
+.add .wrap-submit-button {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+/*стили для поля загрузки картинки*/
+.input-upload {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+
+.input-upload .form-upload {
+    display: table-cell;
+    border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	position: relative;
+	z-index: 20;
+	float: left;
+    width: 268px;
+    height: 44px;
+    background-color: #fff;
+}
+
+.input-upload .input-upload-btn {
+	background: #48cbe8 url("../img/upload-icon.png") no-repeat scroll 10px 9px;
+    float: right;
+    overflow: hidden;
+    width: 50px;
+    height: 44px;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0;
+}
+/*стили для поля загрузки картинки end*/
