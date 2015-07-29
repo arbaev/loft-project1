@@ -3,21 +3,19 @@
    ========================================================================== */
 
 .container {
-	margin: 30px auto;
-	text-align: justify;
+	margin: 15px auto 30px;
 }
 
-.gallery-item {
-	width: 30%;
-	margin: 0 8px 30px;
+.works-item {
+	width: 181px;
+	margin: 0 16px 30px;
 	display: inline-block;
 	text-align: center;
 	position: relative;
-	overflow: hidden;
 	vertical-align: top;
 }
 
-.gallery-img {
+.works-item .works-preview {
 	z-index: 1000;
 	position: relative;
 	margin-bottom: 5px;
@@ -25,14 +23,25 @@
 	border-radius: 5px;
 	display: inline-block;
 	overflow: hidden;
-	width: 186px;
-	height: 124px;
+	width: 179px;
+	height: 125px;
 	vertical-align: top;
 }
 
-.hoverfx {
+.works-item .works-img {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+
+.works-item .caption {
+	line-height: 1.2;
+	font-size: .9em;
+}
+
+.works-item .hoverfx {
     z-index: 1002;
-    background-color: #3ba8c0;
+    background: #3ba8c0;
     transition: all 0.2s ease-in-out 0s;
     opacity: 0;
     color: white;
@@ -43,27 +52,41 @@
 	top: 0;
 }
 
-.hoverfx:hover,
-.hoverfx:active {
-	opacity: 0.75;
+.works-item .hoverfx:hover,
+.works-item .hoverfx:active {
+	opacity: 0.85;
 }
 
 .ie8 .hoverfx {
 	display: none;
 }
 
-.hoverfx-inside {
-    width: 100px;
+.works-item .hoverfx-inside {
     margin: 44px auto 0;
-    padding: 4px 0;
+    padding: 4px;
     display: inline-block;
     border-radius: 5px;
-    border: 2px solid #fff;
+    border: 2px solid #f9fafb;
+    color: #f9fafb;
+    opacity: 1;
 }
 
-.add-project {
+.works-item .add-project {
 	display: table-cell;
 	vertical-align: middle;
 	border: 2px dashed #3ba8c0;
 	background-color: #edf8fc;
+}
+
+.works-item.add-project .works-preview {
+	border: 2px dashed #3ba8c0;
+}
+
+.works-item.add-project .add-link {
+    padding: 70px 5px;
+    display: inline-block;
+}
+
+.icon-addproject {
+    background: url(../img/add-project.png) no-repeat 70px 34px;
 }
