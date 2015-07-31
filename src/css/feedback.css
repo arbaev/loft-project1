@@ -3,53 +3,53 @@
    ========================================================================== */
 
 .feedback-title {
-    margin: 0;
-    padding: 30px;
-    color: #fff;
-    text-align: center;
-    font-weight: normal;
-    background-color: #48cbe8;
-    border-bottom: 16px solid #51daf8;
+	margin: 0;
+	padding: 30px;
+	color: #fff;
+	text-align: center;
+	font-weight: normal;
+	background-color: #48cbe8;
+	border-bottom: 16px solid #51daf8;
 }
 
 .wrapper {
-    margin: 30px auto;
+	margin: 30px auto;
 }
 
 .user-form {
-    width: 90%;
-    margin: 0 auto;
+	width: 90%;
+	margin: 0 auto;
 }
 
 .form-textarea {
-    width: 94.5%;
-    height: 150px;
+	width: 94.5%;
+	height: 150px;
 }
 
 .form-name {
-    width: 48%;
+	width: 48%;
 }
 
 .wrap-form-element,
 .wrap-message {
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .wrap-captcha {
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .form-captcha {
-    width: 48%;
-    display: inline-block;
-    vertical-align: top;
+	width: 48%;
+	display: inline-block;
+	vertical-align: top;
 }
 
 .captcha-img {
-    margin: 16px auto;
-    display: inline-block;
-    width: 48%;
-    text-align: center;
+	margin: 16px auto;
+	display: inline-block;
+	width: 48%;
+	text-align: center;
 }
 
 

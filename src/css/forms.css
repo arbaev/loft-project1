@@ -3,78 +3,115 @@
    ========================================================================== */
 input,
 textarea {
-    -webkit-box-sizing : border-box;‌​
-    -moz-box-sizing : border-box;
-    box-sizing : border-box;
+	-webkit-box-sizing : border-box;‌​
+	-moz-box-sizing : border-box;
+	box-sizing : border-box;
 }
 
 ::-webkit-input-placeholder {
-    color: #48cbe8;
+	color: #48cbe8;
 }
 
 ::-moz-placeholder {
-    color: #48cbe8;
+	color: #48cbe8;
 }
 
 :-moz-placeholder {
-    color: #48cbe8;
+	color: #48cbe8;
 }
 
 :-ms-input-placeholder {
-    color: #48cbe8;
+	color: #48cbe8;
 }
 
 .form-element,
 .form-textarea {
-    border: 1px solid #48cbe8;
-    border-radius: 3px;
-    padding: .5em;
-    margin-bottom: 20px;
-    width: 100%;
-    outline: none;
-    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+	border: 1px solid #48cbe8;
+	border-radius: 3px;
+	padding: .5em;
+	margin-bottom: 20px;
+	width: 100%;
+	outline: none;
+	-webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+	-moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+	-o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+	transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
 }
 
 .label {
-    display: block;
-    font-size: 1.2em;
+	display: block;
+	font-size: 1.2em;
 }
 
 .form-textarea {
-    resize: vertical;
+	resize: vertical;
 }
 
+/*кнопка универсальная*/
 .submit-button {
-    font-size: 1.5em;
-    width: 8em;
-    position: relative;
-    padding: 5px 20px;
-    margin: 0;
-    border-radius: 10px;
-    color: #FFF;
-    text-decoration: none;
-    outline: none;
-}
-
-.bluecolor {
-    background-color: #48cbe8;
-    border-bottom: 5px solid #3ba8c0;
-    text-shadow: 0px -2px #3ba8c0;
-}
-
-.rosecolor {
-    background-color: #cc646b;
-    border-bottom: 5px solid #a95258;
-    text-shadow: 0px -2px #a95258;
+	font-size: 1.5em;
+	width: 8em;
+	position: relative;
+	padding: 5px 20px;
+	margin: 0;
+	border-radius: 10px;
+	color: #FFF;
+	text-decoration: none;
+	outline: none;
 }
 
 .submit-button:active {
-    transform: translate(0px, 5px);
-    -webkit-transform: translate(0px, 5px);
-    border-bottom: 1px solid;
-    margin-bottom: 4px;
+	transform: translate(0px, 5px);
+	-webkit-transform: translate(0px, 5px);
+	border-bottom: 1px solid;
+	margin-bottom: 4px;
 }
 
+/*синий цвет для кнопки*/
+.bluecolor {
+	background-color: #48cbe8;
+	border-bottom: 5px solid #3ba8c0;
+	text-shadow: 0px -2px #3ba8c0;
+}
+/*розовый цвет для кнопки*/
+.rosecolor {
+	background-color: #cc646b;
+	border-bottom: 5px solid #a95258;
+	text-shadow: 0px -2px #a95258;
+}
+/*кнопка универсальная end*/
+
+/**
+	сообщения об ошибках или успехах в формах
+*/
+.msg {
+	border-radius: 3px;
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 5px;
+	-webkit-box-sizing : border-box;‌​
+	-moz-box-sizing : border-box;
+	box-sizing : border-box;
+}
+
+.msg .msg-title {
+	margin: 0;
+	font-weight: 300;
+	font-size: 1.8em;
+	line-height: 1em;
+}
+
+.msg .msg-text {}
+
+.msg .msg-err {
+	background: #fdd5d2;
+	border: 1px solid #f97e76;
+	color: #f97e76;
+}
+
+.msg .msg-success {
+	background: #c3e9d4;
+	border: 1px solid #49bb7b;
+	color: #49bb7b;
+}
+/*сообщения об ошибках или успехах в формах end*/

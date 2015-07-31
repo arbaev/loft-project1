@@ -12,7 +12,10 @@
 #48cbe8 - contacts phone bg, feedback page title
 #51daf8 - contacts skype bg, feedback page title border
 #edf8fc - add project bg
-#f97e76 - error tooltips bg
+#f97e76 - error tooltips bg, error messages text & border
+#fdd5d2 - error messages bg
+#49bb7b - success messages text & border
+#c3e9d4 - success messages bg
    */
 
 
@@ -21,55 +24,63 @@
    ========================================================================== */
 html,
 body {
-    height: 100%;
+	height: 100%;
 }
 
 .browserupgrade {
-    text-align: center;
-    padding: 10px 0px;
-    background-color: #ffa;
-    width: 100%;
+	text-align: center;
+	padding: 10px 0px;
+	background-color: #ffa;
+	width: 100%;
 }
 
 a,
 a:visited {
-    color: #3ba8c0;
-    text-decoration: none;
+	color: #3ba8c0;
+	text-decoration: none;
 }
 
 a:hover,
 a:active {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 .maincontainer {
-    min-height: 100%;
+	min-height: 100%;
 }
 
 .fullpage {
-    font-family: 'fira_sansregular', sans-serif;
-    background: #fbfcfd url(../img/comppattern2.png) repeat;
-    color: #58697a;
+	font-family: 'fira_sansregular', sans-serif;
+	background: #fbfcfd url(../img/comppattern2.png) repeat;
+	color: #58697a;
 }
 
 .page {
-    width: 960px;
-    margin: 0 auto;
-    padding-bottom: 100px;
-    overflow:auto;
-    padding-bottom: 80px;  /* must be same height as the footer */
+	width: 960px;
+	margin: 0 auto;
+	padding-bottom: 100px;
+	overflow:auto;
+	padding-bottom: 80px;  /* must be same height as the footer */
 }
 
 .flr {
-    float: right;
+	float: right;
 }
 
 .fll {
-    float: left;
+	float: left;
 }
 
 .bold {
-    font-weight: bold;
+	font-weight: bold;
+}
+
+.show {
+	display: inherit;
+}
+
+.noshow {
+	display: none;
 }
 
 /* ==========================================================================
@@ -77,62 +88,62 @@ a:active {
    ========================================================================== */
 /* also check the padding-bottom value in .page - it must be height of footer */
 .fullfooter {
-    background-color: #eff3f7;
-    height: 80px;
-    margin-top: -80px; /* negative value of footer height */
-    position: relative;
-    clear:both;
+	background-color: #eff3f7;
+	height: 80px;
+	margin-top: -80px; /* negative value of footer height */
+	position: relative;
+	clear:both;
 }
 /*Opera Fix*/
 body:before {
-    content:"";
-    height:100%;
-    float:left;
-    width:0;
-    margin-top:-32767px;/
+	content:"";
+	height:100%;
+	float:left;
+	width:0;
+	margin-top:-32767px;/
 }
 /* sticky end */
 .mainfooter {
-    max-width: 1200px;
-    min-width: 960px;
-    position: relative;
-    margin: 0 auto;
-    padding-top: 30px;
+	max-width: 1200px;
+	min-width: 960px;
+	position: relative;
+	margin: 0 auto;
+	padding-top: 30px;
 }
 
 .login {
-    display: inline-block;
-    position: absolute;
-    left: 160px;
-    top: 24px;
-    text-indent: -9999px;
+	display: inline-block;
+	position: absolute;
+	left: 160px;
+	top: 24px;
+	text-indent: -9999px;
 }
 
 .copyright {
-    margin: 0 auto;
-    padding: 0;
-    min-width: 500px;
-    max-width: 800px;
-    text-align: center;
+	margin: 0 auto;
+	padding: 0;
+	min-width: 500px;
+	max-width: 800px;
+	text-align: center;
 }
 
 .sprite-sys {
-    background-image: url(../img/sprites-sys.png);
-    background-repeat: no-repeat;
-    display: block;
+	background-image: url(../img/sprites-sys.png);
+	background-repeat: no-repeat;
+	display: block;
 }
 
 .sprite-lock-locked {
-    width: 20px;
-    height: 32px;
-    background-position: -89px -39px;
+	width: 20px;
+	height: 32px;
+	background-position: -89px -39px;
 }
 
 .sprite-lock-locked:hover,
 .sprite-lock-locked:active {
-    width: 20px;
-    height: 32px;
-    background-position: -119px -39px;
+	width: 20px;
+	height: 32px;
+	background-position: -119px -39px;
 }
 
 
@@ -141,41 +152,41 @@ body:before {
    ========================================================================== */
 
 .fullheader {
-    background-color: #eff3f7;
-    height: 100%;
-    margin-bottom: 30px;
+	background-color: #eff3f7;
+	height: 100%;
+	margin-bottom: 30px;
 }
 
 .mainheader {
-    max-width: 1200px;
-    min-width: 960px;
-    position: relative;
-    margin: 0 auto;
-    padding-top: 30px;
-    height: 86px;
+	max-width: 1200px;
+	min-width: 960px;
+	position: relative;
+	margin: 0 auto;
+	padding-top: 30px;
+	height: 86px;
 }
 
 .logo {
-    display: inline-block;
-    position: absolute;
-    left: 0;
-    height: 43px;
-    width:243px;
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	height: 43px;
+	width:243px;
 }
 
 .social {
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    min-width: 260px;
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	min-width: 260px;
 }
 
 .social-item {
-    display: inline-block;
-    width: 64px;
+	display: inline-block;
+	width: 64px;
 }
 
 
@@ -184,63 +195,63 @@ body:before {
    ========================================================================== */
 
 .sprite-soc {
-    background-image: url(../img/sprites-social.png);
-    background-repeat: no-repeat;
-    display: block;
-    margin: 0 12px;
-    text-indent: -9999px;
+	background-image: url(../img/sprites-social.png);
+	background-repeat: no-repeat;
+	display: block;
+	margin: 0 12px;
+	text-indent: -9999px;
 }
 
 .sprite-social-fb {
-    width: 48px;
-    height: 48px;
-    background-position: -4px -4px;
+	width: 48px;
+	height: 48px;
+	background-position: -4px -4px;
 }
 
 .sprite-social-fb:hover,
 .sprite-social-fb:active {
-    width: 48px;
-    height: 48px;
-    background-position: -61px -4px;
+	width: 48px;
+	height: 48px;
+	background-position: -61px -4px;
 }
 
 .sprite-social-github {
-    width: 48px;
-    height: 48px;
-    background-position: -4px -62px;
+	width: 48px;
+	height: 48px;
+	background-position: -4px -62px;
 }
 
 .sprite-social-github:hover,
 .sprite-social-github:active {
-    width: 48px;
-    height: 48px;
-    background-position: -61px -62px;
+	width: 48px;
+	height: 48px;
+	background-position: -61px -62px;
 }
 
 .sprite-social-tw {
-    width: 48px;
-    height: 48px;
-    background-position: -119px -4px;
+	width: 48px;
+	height: 48px;
+	background-position: -119px -4px;
 }
 
 .sprite-social-tw:hover,
 .sprite-social-tw:active {
-    width: 48px;
-    height: 48px;
-    background-position: -119px -61px;
+	width: 48px;
+	height: 48px;
+	background-position: -119px -61px;
 }
 
 .sprite-social-vk {
-    width: 48px;
-    height: 48px;
-    background-position: -4px -119px;
+	width: 48px;
+	height: 48px;
+	background-position: -4px -119px;
 }
 
 .sprite-social-vk:hover,
 .sprite-social-vk:active {
-    width: 48px;
-    height: 48px;
-    background-position: -61px -119px;
+	width: 48px;
+	height: 48px;
+	background-position: -61px -119px;
 }
 
 
@@ -249,23 +260,23 @@ body:before {
    ========================================================================== */
 
 .hr-gradient {
-    height: 3px;
-    background: #3ba8c0;
-    /* Old browsers */
-    background: -moz-linear-gradient(left, #eff3f7 0%, #1f687c 46%, #1f687c 53%, #eff3f7 100%);
-    /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #eff3f7), color-stop(46%, #1f687c), color-stop(53%, #1f687c), color-stop(100%, #eff3f7));
-    /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left, #eff3f7 0%, #1f687c 46%, #1f687c 53%, #eff3f7 100%);
-    /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left, #eff3f7 0%, #1f687c 46%, #1f687c 53%, #eff3f7 100%);
-    /* Opera 11.10+ */
-    background: -ms-linear-gradient(left, #eff3f7 0%, #1f687c 46%, #1f687c 53%, #eff3f7 100%);
-    /* IE10+ */
-    background: linear-gradient(to right, #eff3f7 0%, #1f687c 46%, #1f687c 53%, #eff3f7 100%);
-    /* W3C */
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#eff3f7', endColorstr='#eff3f7', GradientType=1);
-    /* IE6-9 */
+	height: 3px;
+	background: #3ba8c0;
+	/* Old browsers */
+	background: -moz-linear-gradient(left, #eff3f7 0%, #1f687c 46%, #1f687c 53%, #eff3f7 100%);
+	/* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%, #eff3f7), color-stop(46%, #1f687c), color-stop(53%, #1f687c), color-stop(100%, #eff3f7));
+	/* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, #eff3f7 0%, #1f687c 46%, #1f687c 53%, #eff3f7 100%);
+	/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, #eff3f7 0%, #1f687c 46%, #1f687c 53%, #eff3f7 100%);
+	/* Opera 11.10+ */
+	background: -ms-linear-gradient(left, #eff3f7 0%, #1f687c 46%, #1f687c 53%, #eff3f7 100%);
+	/* IE10+ */
+	background: linear-gradient(to right, #eff3f7 0%, #1f687c 46%, #1f687c 53%, #eff3f7 100%);
+	/* W3C */
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#eff3f7', endColorstr='#eff3f7', GradientType=1);
+	/* IE6-9 */
 }
 
 
@@ -274,25 +285,25 @@ body:before {
    ========================================================================== */
 
 .content {
-    width: 650px;
+	width: 650px;
 }
 
 .article {
-    background-color: #eff3f7;
-    border-radius: 5px;
-    padding-bottom: 10px;
-    margin-bottom: 15px;
-    overflow: hidden;
+	background-color: #eff3f7;
+	border-radius: 5px;
+	padding-bottom: 10px;
+	margin-bottom: 15px;
+	overflow: hidden;
 }
 
 .article-title {
-    display: inline-block;
-    padding: 5px 36px;
-    margin: 5px 0 15px 0;
-    font-size: 1.8em;
-    font-weight: normal;
-    border-bottom: 2px solid #3ba8c0;
-    color: #3ba8c0;
+	display: inline-block;
+	padding: 5px 36px;
+	margin: 5px 0 15px 0;
+	font-size: 1.8em;
+	font-weight: normal;
+	border-bottom: 2px solid #3ba8c0;
+	color: #3ba8c0;
 }
 
 
@@ -301,9 +312,9 @@ body:before {
    ========================================================================== */
 
 .sidebar {
-    width: 250px;
-    position: relative;
-    font-size: 1.2em;
+	width: 250px;
+	position: relative;
+	font-size: 1.2em;
 }
 
 
@@ -312,47 +323,47 @@ body:before {
    ========================================================================== */
 
 .sidemenu {
-    list-style: none;
-    background: #eff3f7;
-    border-radius: 5px;
-    margin-top: 0;
-    padding: 0;
-    overflow: hidden;
-    font-size: 1.1em;
+	list-style: none;
+	background: #eff3f7;
+	border-radius: 5px;
+	margin-top: 0;
+	padding: 0;
+	overflow: hidden;
+	font-size: 1.1em;
 }
 
 .sidemenu .sidemenu-item {
-    border-top: 2px solid #3ba8c0;
-    margin: 0 20px;
+	border-top: 2px solid #3ba8c0;
+	margin: 0 20px;
 }
 
 .sidemenu .sidemenu-item:first-child {
-    border-top: 2px solid transparent;
-    margin: 0 20px;
+	border-top: 2px solid transparent;
+	margin: 0 20px;
 }
 
 .sidemenu .sidemenu-link {
-    display: block;
-    color: #959aa8;
-    text-decoration: none;
-    padding: 25px 5px 20px 12px;
-    white-space: nowrap;
+	display: block;
+	color: #959aa8;
+	text-decoration: none;
+	padding: 25px 5px 20px 12px;
+	white-space: nowrap;
 }
 
 .sidemenu .sidemenu-link:hover {
-    color: #3ba8c0;
+	color: #3ba8c0;
 }
 
 .sidemenu .sidemenu-item.active {
-    background: #3ba8c0;
-    margin: 0;
-    margin-bottom: -2px;
-    padding-bottom: 2px;
-    padding-left: 20px;
+	background: #3ba8c0;
+	margin: 0;
+	margin-bottom: -2px;
+	padding-bottom: 2px;
+	padding-left: 20px;
 }
 
 .sidemenu .sidemenu-item.active .sidemenu-link {
-    color: #f9fafb;
+	color: #f9fafb;
 }
 
 /* ==========================================================================
@@ -360,52 +371,52 @@ body:before {
    ========================================================================== */
 
 .contacts {
-    background: #3ba8c0;
-    border-radius: 5px;
-    margin-top: 0;
-    margin-bottom: 40px;
-    overflow: hidden;
-    font-size: .9em;
-    font-style: normal;
+	background: #3ba8c0;
+	border-radius: 5px;
+	margin-top: 0;
+	margin-bottom: 40px;
+	overflow: hidden;
+	font-size: .9em;
+	font-style: normal;
 }
 
 .contacts .contacts-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
 .contacts .contacts-item {
 }
 
 .contacts .title {
-    color: #fff;
-    font-size: 1.1em;
-    padding-left: 30px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+	color: #fff;
+	font-size: 1.1em;
+	padding-left: 30px;
+	padding-top: 12px;
+	padding-bottom: 12px;
 }
 
 .contacts .contacts-link {
-    color: #fff;
-    display: block;
-    padding-top: 12px;
-    padding-bottom: 12px;
+	color: #fff;
+	display: block;
+	padding-top: 12px;
+	padding-bottom: 12px;
 }
 
 .icon-email {
-    padding-left: 65px;
-    background: #41b9d4 url(../img/contacts-mail.png) no-repeat 25px 10px;
+	padding-left: 65px;
+	background: #41b9d4 url(../img/contacts-mail.png) no-repeat 25px 10px;
 }
 
 .icon-phone {
-    padding-left: 65px;
-    background: #48cbe8 url(../img/contacts-phone.png) no-repeat 25px 10px;
+	padding-left: 65px;
+	background: #48cbe8 url(../img/contacts-phone.png) no-repeat 25px 10px;
 }
 
 .icon-skype {
-    padding-left: 65px;
-    background: #51daf8 url(../img/contacts-skype.png) no-repeat 25px 10px;
+	padding-left: 65px;
+	background: #51daf8 url(../img/contacts-skype.png) no-repeat 25px 10px;
 }
 
 /* ==========================================================================
@@ -425,14 +436,14 @@ body:before {
 
 .cf:before,
 .cf:after {
-    content: " ";
-    /* 1 */
-    display: table;
-    /* 2 */
+	content: " ";
+	/* 1 */
+	display: table;
+	/* 2 */
 }
 
 .cf:after {
-    clear: both;
+	clear: both;
 }
 
 
@@ -442,5 +453,5 @@ body:before {
  */
 
 .cf {
-    *zoom: 1;
+	*zoom: 1;
 }
