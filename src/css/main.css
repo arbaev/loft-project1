@@ -76,7 +76,7 @@ a:active {
 }
 
 .show {
-	display: inherit;
+	display: block;
 }
 
 .noshow {

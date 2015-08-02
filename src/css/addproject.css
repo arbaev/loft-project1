@@ -6,7 +6,7 @@
 	background: #eff3f7;
 	margin-bottom: 50px;
 	border-radius: 5px;
-	overflow: hidden;
+	overflow: inherit;
 	-webkit-box-shadow: 0px 0px 18px 0px rgba(64,64,64,0.75);
 	-moz-box-shadow: 0px 0px 18px 0px rgba(64,64,64,0.75);
 	box-shadow: 0px 0px 18px 0px rgba(64,64,64,0.75);
@@ -48,9 +48,10 @@
 	margin-bottom: 30px;
 }
 
-/*стили для поля загрузки картинки*/
+/*	==========================================================================
+	File upload ver.1  НЕ ИСПОЛЬЗУЮТСЯ!
+	========================================================================== */
 .input-upload {
-	position: relative;
 	margin-bottom: 20px;
 }
 
@@ -86,3 +87,35 @@
 	font-size: 150px;
 }
 /*стили для поля загрузки картинки end*/
+
+/* ==========================================================================
+   File upload ver.2
+   ========================================================================== */
+
+.file-upload {
+    overflow: hidden;
+}
+
+.file-upload .form-upload {
+	cursor: pointer;
+	height: 44px;
+}
+
+.file-upload .input-upload-btn {
+	background: #48cbe8 url("../img/upload-icon.png") no-repeat scroll 10px 9px;
+	width: 50px;
+	height: 44px;
+	position: absolute;
+	right: 0px;
+	cursor: pointer;
+}
+
+.file-upload .hidden-input-file {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+
+.file-upload .input-wrap {
+	position: relative;
+}

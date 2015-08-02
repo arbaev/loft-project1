@@ -24,8 +24,7 @@ textarea {
 	color: #48cbe8;
 }
 
-.form-element,
-.form-textarea {
+.form-element {
 	border: 1px solid #48cbe8;
 	border-radius: 3px;
 	padding: .5em;
@@ -41,13 +40,17 @@ textarea {
 .label {
 	display: block;
 	font-size: 1.2em;
+	margin: 0;
+	font-weight: normal;
 }
 
 .form-textarea {
 	resize: vertical;
 }
 
-/*кнопка универсальная*/
+/* ==========================================================================
+   Кнопка сабмита
+   ========================================================================== */
 .submit-button {
 	font-size: 1.5em;
 	width: 8em;
@@ -81,9 +84,17 @@ textarea {
 }
 /*кнопка универсальная end*/
 
-/**
+/*ошибка для input*/
+.err-input {
+	border: 1px solid #f97e76;
+	background-color: #fdd5d2;
+}
+
+
+
+/*	==========================================================================
 	сообщения об ошибках или успехах в формах
-*/
+	========================================================================== */
 .msg {
 	border-radius: 3px;
 	width: 100%;
@@ -115,3 +126,41 @@ textarea {
 	color: #49bb7b;
 }
 /*сообщения об ошибках или успехах в формах end*/
+
+
+/* ==========================================================================
+   Tooltip
+   ========================================================================== */
+.tooltip-wrap {
+    position: relative;
+}
+
+.tooltip {
+    position: absolute;
+    padding: 0 5%;
+    color: #FFFFFF;
+    background: #f97e76;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 3px;
+    opacity: 1;
+    right: 94%;
+    /*top: 50%;*/
+    margin-right: 15px;
+    z-index: 999;
+    white-space: nowrap;
+}
+
+.tooltip:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -8px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid #f97e76;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+}

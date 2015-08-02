@@ -138,45 +138,101 @@
 						<a class="add-close sprite-sys sprite-close b-close" href="#">X</a>
 					</h1>
 					<form id="form-add-project" action="#" class="add">
+
 						<!-- сообщение об ошибке  -->
-						<div class="msg err-msg noshow">
+						<div class="msg msg-err noshow">
 							<h4 class="msg-title">Ошибка!</h4>
 							<span class="msg-text">Невероятная ошибка на сервере</span>
 						</div><!-- сообщение об ошибке end -->
 						<!-- сообщение об успехе  -->
-						<div class="msg success-msg noshow">
+						<div class="msg msg-success noshow">
 							<h4 class="msg-title">Отлично!</h4>
 							<span class="msg-text">Всё закончилось успешно</span>
 						</div><!-- сообщение об успехе end -->
 
-						<label for="project-name" class="label">Название проекта</label>
-						<input type="text" id="project-name" name="project-name" class="form-element"
-						placeholder="Введите название" value="">
+						<!-- форма добавления нового проекта -->
+						<!-- при отсутвии заполнения полей выводятся тултипы, должны располагаться перед соответствующим инпутом -->
 
-						<!-- поле загрузки картинки -->
+						<!-- поле название проекта -->
+						<label for="project-name"><h3 class="label">Название проекта</h3></label>
+						<span class="tooltip noshow">Введите название проекта</span>
+						<input 	type="text"
+								id="project-name"
+								name="project-name"
+								class="form-element"
+								placeholder="Введите название"
+								value="">
+
+						<!-- поле загрузки картинки проекта: кнопка в виде label на скрытый инпут -->
+						<label class="file-upload cf"><h3 class="label">Картинка проекта</h3>
+
+							<span class="tooltip noshow">Загрузите превью проекта</span>
+							<!-- фейковый инпут -->
+							<input 	type="text"
+									class="form-element form-upload fll"
+									type="file"
+									id="project-pic"
+									name="project-pic"
+									placeholder="Загрузите изображение">
+
+							<div class="input-wrap"> <!-- обёртка для правильного позиционирования тултипа -->
+								<label id="project-pic" class="input-upload-btn flr">
+									<input type="file" class="hidden-input-file">
+								</label>
+							</div>
+
+						</label>
+						<!-- поле загрузки картинки проекта end -->
+
+
+						<!-- СТАРЫЙ ВАРИАНТ поле загрузки картинки
 						<div class="input-upload">
-
 							<label for="project-pic" class="label">Картинка проекта</label>
-							<div class="input-wrap">
-								<input class="form-element form-upload input-hide" type="file" id="project-pic" name="project-pic" placeholder="Загрузите изображение" kl_virtual_keyboard_secure_input="on">
+							<div class="input-wrap cf">
+								<span class="tooltip noshow">Загрузите превью проекта</span>
+								<input 	class="form-element form-upload input-hide"
+										type="file"
+										id="project-pic"
+										name="project-pic"
+										placeholder="Загрузите изображение" >
 
 								<span id="project-pic" class="input-upload-btn"></span>
 							</div>
 						</div>
-						<!-- поле загрузки картинки end -->
+						<!-- СТАРЫЙ ВАРИАНТ поле загрузки картинки end -->
 
-						<label for="project-url" class="label">URL проекта</label>
-						<input type="text" id="project-url" name="project-url" class="form-element"
-						placeholder="Укажите ссылку" value="">
 
-						<label for="message" class="label">Описание проекта</label>
-						<textarea id="message" name="message" class="form-textarea" placeholder="Пара слов о проекте"></textarea>
 
+
+
+						<!-- поле URL проекта -->
+						<label for="project-url"><h3 class="label">URL проекта</h3></label>
+						<span class="tooltip noshow">Введите URL проекта</span>
+						<input 	type="text"
+								id="project-url"
+								name="project-url"
+								class="form-element"
+								placeholder="Укажите ссылку"
+								value="">
+
+						<!-- поле описание проекта -->
+						<label for="message"><h3 class="label">Описание проекта</h3></label>
+						<span class="tooltip noshow">Введите описание проекта</span>
+						<textarea 	id="message"
+									name="message"
+									class="form-element"
+									placeholder="Пара слов о проекте"></textarea>
+
+						<!-- кнопка сабмита формы -->
 						<div class="wrap-submit-button">
-							<input type="submit" id="submit-upload-form" name="submit-upload-form" class="submit-button bluecolor" value="Добавить">
+							<button type="submit"
+									id="submit-upload-form"
+									class="submit-button bluecolor"
+									value="Добавить">Добавить</button>
 						</div>
 
 					</form>
+					<!-- конец формы загрузки проекта -->
 
 				</div>
 
