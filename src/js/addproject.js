@@ -9,8 +9,12 @@ var addModule = (function() {
 
 	// прослушка событий
 	var _setupListeners = function () {
+
 		$('#add-new-project').on('click', _showPopup);
+		$('.b-close').on('click', _errorResetOnClose);
 		$('#form-add-project').on('submit', _submitProject);
+		$('#project-pic').on('change', _fileInput);
+		$('.form-element').on('focus', _errorResetOnFocus);
 	};
 
 	// показать модальное окно добавления проекта
@@ -23,29 +27,60 @@ var addModule = (function() {
 		});
 	};
 
-	// сабмит добавления проекта
+	// проверка на наличие данных в полях ввода и вывод тултипов, если нет
 	var _submitProject = function(ev) {
 		ev.preventDefault();
 
 		// объявляем нужные переменные
 		var form = $(this),
-			inps = form.find('input, textarea'),
-			tooltips = form.find('.label').next(), // тултип всегда идёт следом за label
-			url = 'addproject.php',
-			aaa;
+			inps = form.find('input, textarea');
 
 		inps.each(function() {
 			if($(this).val().length === 0) {
-				console.log(1);
-
 				$(this).addClass('err-input');
-				$(this).prev().removeClass('noshow');
+				$(this).prev().show();  // тултип всегда идёт перед input
 			} else {
-				return 1;
+				$(this).addClass('good-input');
 			}
 		});
-
+		return 1;
 	};
+
+	// убираем все семафоры ошибок при закрытии окна загрузки проекта
+	var _errorResetOnClose = function() {
+		var form = $("#form-add-project"),
+			inps = form.find('input, textarea');
+
+		inps.each(function(index,input) {
+			$(this).removeClass('err-input good-input').val(''); // убираем обводку и очищаем инпут
+			$(this).prev().hide();  // скрываем тултип, он всегда идёт перед input
+		});
+	}
+
+	// убираем семафоры ошибок при фокусе на поле
+	var _errorResetOnFocus = function () {
+		var inputLength = $(this).val().length
+		// если в инпуте уже что-то введено — не удаляем
+		if (!inputLength) {
+			$(this).removeClass('err-input good-input').val(''); // убираем обводку и очищаем инпут
+		};
+			$(this).prev().hide();  // скрываем тултип, он всегда идёт перед input
+
+	}
+
+	// вставка имени загружаемого файла в инпут
+	var _fileInput = function() {
+		// получаем имя файла (+путь) загружаемого файла
+        var filePath = $('#project-pic').val();
+        // выцепляем из полного пути имя файла
+		var fileName = ('' + filePath).replace(/^.*[\\\/]/, '');
+		// подставляем в фейковый инпут
+		$('#project-pic-fake').val(fileName);
+		$('#project-pic-fake').addClass('good-input'); // убираем обводку и очищаем инпут
+		// ратычно скрываем тултип и обводку-ошибку
+		$('#project-pic-fake').removeClass('err-input'); // убираем обводку
+		$('#project-pic-fake').prev().hide();  // скрываем тултип, он всегда идёт перед input
+    }
 
 	return {
 		init : init

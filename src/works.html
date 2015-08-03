@@ -151,11 +151,11 @@
 						</div><!-- сообщение об успехе end -->
 
 						<!-- форма добавления нового проекта -->
-						<!-- при отсутвии заполнения полей выводятся тултипы, должны располагаться перед соответствующим инпутом -->
+						<!-- при отсутвии заполнения полей выводятся тултипы с классом tooltip, должны располагаться перед соответствующим инпутом -->
 
 						<!-- поле название проекта -->
 						<label for="project-name"><h3 class="label">Название проекта</h3></label>
-						<span class="tooltip noshow">Введите название проекта</span>
+						<span class="tooltip">Введите название проекта</span>
 						<input 	type="text"
 								id="project-name"
 								name="project-name"
@@ -171,13 +171,13 @@
 							<input 	type="text"
 									class="form-element form-upload fll"
 									type="file"
-									id="project-pic"
+									id="project-pic-fake"
 									name="project-pic"
 									placeholder="Загрузите изображение">
 
 							<div class="input-wrap"> <!-- обёртка для правильного позиционирования тултипа -->
-								<label id="project-pic" class="input-upload-btn flr">
-									<input type="file" class="hidden-input-file">
+								<label class="input-upload-btn flr">
+									<input id="project-pic" type="file" class="hidden-input-file">
 								</label>
 							</div>
 
