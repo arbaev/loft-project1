@@ -140,12 +140,12 @@
 					<form id="form-add-project" action="#" class="add">
 
 						<!-- сообщение об ошибке  -->
-						<div class="msg msg-err noshow">
+						<div class="msg msg-err">
 							<h4 class="msg-title">Ошибка!</h4>
-							<span class="msg-text">Невероятная ошибка на сервере</span>
+							<span class="msg-text">Похоже, вы заполнили не все поля</span>
 						</div><!-- сообщение об ошибке end -->
 						<!-- сообщение об успехе  -->
-						<div class="msg msg-success noshow">
+						<div class="msg msg-success">
 							<h4 class="msg-title">Отлично!</h4>
 							<span class="msg-text">Всё закончилось успешно</span>
 						</div><!-- сообщение об успехе end -->
@@ -173,7 +173,8 @@
 									type="file"
 									id="project-pic-fake"
 									name="project-pic"
-									placeholder="Загрузите изображение">
+									placeholder="Загрузите изображение"
+									disabled>
 
 							<div class="input-wrap"> <!-- обёртка для правильного позиционирования тултипа -->
 								<label class="input-upload-btn flr">

@@ -109,6 +109,19 @@ textarea {
 	box-sizing : border-box;
 }
 
+.msg.msg-err {
+	background: #fdd5d2;
+	border: 1px solid #f97e76;
+	color: #f97e76;
+}
+
+.msg.msg-success {
+	background: #c3e9d4;
+	border: 1px solid #49bb7b;
+	color: #49bb7b;
+	width: 400px;
+}
+
 .msg .msg-title {
 	margin: 0;
 	font-weight: 300;
@@ -117,18 +130,6 @@ textarea {
 }
 
 .msg .msg-text {}
-
-.msg .msg-err {
-	background: #fdd5d2;
-	border: 1px solid #f97e76;
-	color: #f97e76;
-}
-
-.msg .msg-success {
-	background: #c3e9d4;
-	border: 1px solid #49bb7b;
-	color: #49bb7b;
-}
 /*сообщения об ошибках или успехах в формах end*/
 
 
