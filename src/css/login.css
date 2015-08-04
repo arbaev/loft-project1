@@ -50,4 +50,7 @@
 .login-menu {
     list-style-type: none;
     line-height: 2em;
+    padding: 0 40px;
 }
+
+.login-menu-item {}

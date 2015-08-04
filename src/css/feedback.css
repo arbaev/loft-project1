@@ -6,6 +6,7 @@
 	margin: 0;
 	padding: 30px;
 	color: #fff;
+	border-radius: 5px 5px 0 0;
 	text-align: center;
 	font-weight: normal;
 	background-color: #48cbe8;
@@ -16,40 +17,38 @@
 	margin: 30px auto;
 }
 
-.user-form {
+.feedback {
 	width: 90%;
 	margin: 0 auto;
 }
 
-.form-textarea {
-	width: 94.5%;
+.feedback .form-textarea {
+	width: 100%;
 	height: 150px;
 }
 
-.form-name {
+.feedback .form-name {
 	width: 48%;
 }
 
-.wrap-form-element,
-.wrap-message {
+.feedback .wrap-form-element,
+.feedback .wrap-message {
 	margin-bottom: 20px;
 }
 
-.wrap-captcha {
+.feedback .wrap-captcha {
 	margin-bottom: 20px;
 }
 
-.form-captcha {
+.feedback .form-captcha {
 	width: 48%;
 	display: inline-block;
 	vertical-align: top;
 }
 
-.captcha-img {
+.feedback .captcha-img {
 	margin: 16px auto;
 	display: inline-block;
 	width: 48%;
 	text-align: center;
 }
-
-

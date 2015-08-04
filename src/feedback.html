@@ -54,40 +54,75 @@
 			<article class="article">
 				<h2 class="feedback-title">У Вас интересный проект? Напишите мне</h2>
 				<div class="wrapper">
-				  <form action="#" class="user-form">
+				  <form action="#" id="feedback" class="feedback">
 					<div class="wrap-form-element cf">
+
 					  <div class="form-name fll">
 						<label for="user-name" class="label">Имя</label>
-						<input type="text" id="user-name" name="user-name" class="form-element"
-						placeholder="Как к Вам обращаться" value="">
+						<span class="tooltip">Укажите ваше имя</span>
+						<input 	type="text"
+								id="user-name"
+								name="user-name"
+								class="form-element"
+								placeholder="Как к Вам обращаться"
+								value="">
 					  </div>
+
 					  <div class="form-name flr">
 						<label for="email" class="label">Email</label>
-						<input type="email" id="email" name="email" class="form-element"
-						placeholder="Куда мне ответить" value="">
+						<span class="tooltip-right">Введите ваш email</span>
+						<input 	type="email"
+								id="email"
+								name="email"
+								class="form-element"
+								placeholder="Куда мне ответить"
+								value="">
 					  </div>
+
 					</div>
+
 					<div class="wrap-message">
-					  <label for="message" class="label">Сообщение</label>
-					  <textarea id="message" name="message" class="form-textarea" placeholder="Кратко в чём суть"></textarea>
+					  	<label for="message" class="label">Сообщение</label>
+						<span class="tooltip">Напишите сообщение</span>
+					  	<textarea id="message"
+						  		name="message"
+						  		class="form-element form-textarea"
+						  		placeholder="Кратко в чём суть"></textarea>
 					</div>
-					<div class="wrap-captcha cf">
+
+					<!-- ввод капчи, не реализовано --
+					<div class="wrap-captcha cf noshow">
 						<div class="captcha-img fll">
 							<img src="img/captcha.jpg" alt="Captcha">
 						</div>
 						<div class="form-captcha flr">
 							<label for="write-captcha" class="label">Введите текст с картинки</label>
-							<input type="text" id="write-captcha" name="captcha" class="form-element"
-							placeholder="Введите код" value="">
+							<input 	type="text"
+									id="write-captcha"
+									name="captcha"
+									class="form-element"
+									placeholder="Введите код"
+									value="">
 						</div>
 					</div>
+					<!-- ввод капчи end -->
+
 					<div class="wrap-form-element cf">
+
 						<div class="wrap-reset-button fll">
-						  <input type="reset" id="reset-form" name="reset-form" class="submit-button rosecolor" value="Очистить">
+							<button id="reset-form"
+								type="reset"
+								class="submit-button rosecolor"
+								value="Очистить">Очистить</button>
 						</div>
+
 						<div class="wrap-submit-button flr">
-						  <input type="submit" id="submit-form" name="submit-form" class="submit-button bluecolor" value="Отправить">
+							<button id="submit-feedback"
+								type="submit"
+								class="submit-button bluecolor"
+								value="Отправить">Отправить</button>
 						</div>
+
 					</div>
 				  </form>
 				</div>
@@ -139,6 +174,8 @@
 		</div>
 	</div>
 </footer>
-
+	<script src="bower/jquery/jquery.js"></script>
+	<script src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
+	<script src="js/feedback.js"></script>
 </body>
 </html>
