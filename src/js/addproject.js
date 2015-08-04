@@ -9,7 +9,7 @@ var addModule = (function() {
 
 	// прослушка событий
 	var _setupListeners = function () {
-
+		$('input, textarea').placeholder();
 		$('#add-new-project').on('click', _showPopup);
 		$('.b-close').on('click', _errorResetOnClose);
 		$('#form-add-project').on('submit', _submitProject);
