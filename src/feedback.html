@@ -55,6 +55,18 @@
 				<h2 class="feedback-title">У Вас интересный проект? Напишите мне</h2>
 				<div class="wrapper">
 				  <form action="#" id="feedback" class="feedback">
+
+						<!-- сообщение об ошибке  -->
+						<div class="msg msg-err">
+							<h4 class="msg-title">Ошибка!</h4>
+							<span class="msg-text">Похоже, вы заполнили не все поля</span>
+						</div><!-- сообщение об ошибке end -->
+						<!-- сообщение об успехе  -->
+						<div class="msg msg-success">
+							<h4 class="msg-title">Спасибо!</h4>
+							<span class="msg-text">Всё закончилось успешно</span>
+						</div><!-- сообщение об успехе end -->
+
 					<div class="wrap-form-element cf">
 
 					  <div class="form-name fll">
@@ -176,6 +188,7 @@
 </footer>
 	<script src="bower/jquery/jquery.js"></script>
 	<script src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
+	<script src="bower/bpopup/jquery.bpopup.js"></script>
 	<script src="js/feedback.js"></script>
 </body>
 </html>

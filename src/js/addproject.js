@@ -49,7 +49,7 @@ var addModule = (function() {
 				.done (function(answer) {
 					console.log(answer);
 					if (answer.status === 'OK') {
-						// если сервер вернул ОК — выводим сообщение об ошибке и по его закрытию закрываем и окно загрузки
+						// если сервер вернул ОК — выводим сообщение об успехе и по его закрытию закрываем и окно загрузки
 						$('.msg-text').text('Проект ' + answer.text + ' загружен!');
 						$('.msg-success').bPopup({
 							onClose: function(){

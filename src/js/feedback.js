@@ -36,13 +36,9 @@ var feedbackModule = (function() {
 				.done (function(answer) {
 					console.log(answer);
 					if (answer.status === 'OK') {
-						// если сервер вернул ОК — выводим сообщение об ошибке и по его закрытию закрываем и окно загрузки
-						$('.msg-text').text('Проект ' + answer.text + ' загружен!');
-						$('.msg-success').bPopup({
-							onClose: function(){
-						        $('#add-popup').bPopup().close();
-							}
-						});
+						// если сервер вернул ОК — выводим сообщение об успехе
+						$('.msg-success .msg-text').text(answer.text + ', ваше сообщение принято');
+						$('.msg-success').bPopup();
 
 					} else {
 						// если сервер не вернул ОК — выводим текст ошибки
@@ -55,7 +51,6 @@ var feedbackModule = (function() {
 				});
 			} else {
 				// ошибки заполнения формы есть — просим устранить
-				console.log(this);
 				$('.msg-err').show();
 			};
 
@@ -67,12 +62,15 @@ var feedbackModule = (function() {
 	// убираем все семафоры ошибок при закрытии окна загрузки проекта
 	var _clearFeedback = function() {
 		var form = $("#feedback"),
-			inps = form.find('input, textarea');
+			inps = form.find('input, textarea'),
+			msgs = form.find('.msg');
 
 		inps.each(function(index,input) {
-			console.log(this);
 			$(this).removeClass('err-input good-input').val(''); // убираем обводку и очищаем инпут
 			$(this).prev().hide();  // скрываем тултип, он всегда идёт перед input
+		});
+		msgs.each(function(index,input) {
+			$(this).hide();
 		});
 	};
 
