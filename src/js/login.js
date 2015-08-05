@@ -1,30 +1,29 @@
 'use strict'
 
-var feedbackModule = (function() {
+var loginModule = (function() {
 	// инициализация функций
 	var init = function () {
-		_clearFeedback();
+		_clearLoginForm();
 		_setupListeners();
 		$('input, textarea').placeholder();  // плейсхолдеры для ИЕ8
 	};
 
 	// прослушка событий
 	var _setupListeners = function () {
-		$('#feedback').on('submit', _submitFeedback); // валидация и отправка формы
-		$('#feedback').on('reset', _clearFeedback); // очистка формы
+		$('#login').on('submit', _submitLogin); // валидация и отправка формы
 		$('.form-element').on('focus', _errorResetOnFocus); // сброс ошибок при фокусе на поле
 	};
 
-	var _submitFeedback = function(ev) {
+	var _submitLogin = function(ev) {
 		var form = $(this),
-			url = 'feedback.php',
+			url = 'login.php',
 			data = form.serialize();
 
 		ev.preventDefault();
 
-		if (_validateFeedbackForm(form) === true) {
+		if (_validateLoginForm(form) === true) {
 			// ошибок заполнения формы нет - сбросим все сообщения об ошибках...
-			_clearFeedback();
+			_clearLoginForm();
 
 			// ...и отдаём на бэкенд
 			$.ajax({
@@ -37,7 +36,7 @@ var feedbackModule = (function() {
 					console.log(answer);
 					if (answer.status === 'OK') {
 						// если сервер вернул ОК — выводим сообщение об успехе
-						$('.msg-success .msg-text').text(answer.text + ', ваше сообщение принято');
+						$('.msg-success .msg-text').text('Вы вошли как ' + answer.text);
 						$('.msg-success').bPopup();
 
 					} else {
@@ -58,17 +57,19 @@ var feedbackModule = (function() {
 
 	};
 
-	// очищаем все инпуты в форме и убираем все семафоры ошибок
-	var _clearFeedback = function() {
-		var form = $("#feedback"),
+	// очищаем все инпуты в форме
+	// убираем все семафоры ошибок при закрытии окна загрузки проекта
+	var _clearLoginForm = function() {
+		var form = $("#login"),
 			inps = form.find('input, textarea'),
 			msgs = form.find('.msg');
 
 		inps.each(function(index,input) {
 			$(this).removeClass('err-input good-input').val(''); // убираем обводку и очищаем инпут
+			console.log($(this).prev());
 			$(this).prev().hide();  // скрываем тултип, он всегда идёт перед input
 		});
-		msgs.each(function(index,input) {
+		msgs.each(function() {
 			$(this).hide();
 		});
 	};
@@ -84,7 +85,7 @@ var feedbackModule = (function() {
 	};
 
 	// проверка всех инпутов на наличие value
-	var _validateFeedbackForm = function (form) {
+	var _validateLoginForm = function (form) {
 		var	inps = form.find('input, textarea'),
 			valid = true;
 
@@ -109,4 +110,4 @@ return {
 
 })();
 
-feedbackModule.init();
+loginModule.init();

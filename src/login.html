@@ -32,27 +32,41 @@
 		<section class="loginpage">
 			<div class="loginblock">
 				<h1 class="login-title">Авторизация</h1>
-				<form action="#" class="login-form">
+				<form action="#" id="login" class="login-form">
+
+						<!-- сообщение об ошибке  -->
+						<div class="msg msg-err">
+							<h4 class="msg-title">Ошибка!</h4>
+							<span class="msg-text">Похоже, вы заполнили не все поля</span>
+						</div><!-- сообщение об ошибке end -->
+						<!-- сообщение об успехе  -->
+						<div class="msg msg-success">
+							<h4 class="msg-title">Ура!</h4>
+							<span class="msg-text">Всё закончилось успешно</span>
+						</div><!-- сообщение об успехе end -->
+
 					<div class="wrap-form-element">
 
-						<div class="form-login">
-							<label for="user-login" class="label-title">Логин</label>
-							<div class="tooltip-wrap">
-								<input type="text" id="user-login" name="user-login" class="form-element" placeholder="Введите логин" value="">
-								<span class="tooltip">Введите логин</span>
-							</div>
-						</div>
+						<label for="user-login" class="label-title">Логин</label>
+						<span class="tooltip">Укажите логин</span>
+						<input 	type="text"
+								id="user-login"
+								name="user-login"
+								class="form-element"
+								placeholder="Введите логин"
+								value="">
 
-						<div class="form-pass">
-							<label for="password" class="label-title">Пароль</label>
-							 <div class="tooltip-wrap">
-								<input type="password" id="password" name="password" class="form-element" placeholder="Введите пароль" value="">
-								<span class="tooltip">Введите пароль</span>
-							</div>
-						</div>
+						<label for="password" class="label-title">Пароль</label>
+						<span class="tooltip">Укажите пароль</span>
+						<input 	type="password"
+								id="password"
+								name="password"
+								class="form-element"
+								placeholder="Введите пароль"
+								value="">
 
 						<div class="wrap-submit-button">
-							<input type="submit" id="submit-form" name="submit-form" class="submit-button bluecolor" value="Войти">
+							<button type="submit" id="submit-login" class="submit-button bluecolor" value="Войти">Войти</button>
 						</div>
 
 					</div>
@@ -88,6 +102,9 @@
 
 	</div>
 </footer>
-
+	<script src="bower/jquery/jquery.js"></script>
+	<script src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
+	<script src="bower/bpopup/jquery.bpopup.js"></script>
+	<script src="js/login.js"></script>
 </body>
 </html>

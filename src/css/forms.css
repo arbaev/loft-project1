@@ -89,11 +89,15 @@ textarea {
 .err-input {
 	border: 1px solid #f97e76;
 	background-color: #fdd5d2;
+    -webkit-box-shadow: 0 0 4px #f97e76;
+    box-shadow: 0 0 4px #f97e76;
 }
 /*годный input*/
 .good-input {
 	border: 1px solid #49bb7b;
-	background-color: #c3e9d4;
+	/*background-color: #c3e9d4;*/
+    -webkit-box-shadow: 0 0 4px #49bb7b;
+    box-shadow: 0 0 4px #49bb7b;
 }
 
 
