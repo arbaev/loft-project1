@@ -3,9 +3,11 @@
 var loginModule = (function() {
 	// инициализация функций
 	var init = function () {
-		_clearLoginForm();
+		var form = $("#login");
+
+		_clearLoginForm(form);
 		_setupListeners();
-		$('input, textarea').placeholder();  // плейсхолдеры для ИЕ8
+		// $('input, textarea').placeholder();  // плейсхолдеры для ИЕ8
 	};
 
 	// прослушка событий
@@ -20,10 +22,10 @@ var loginModule = (function() {
 			data = form.serialize();
 
 		ev.preventDefault();
-
+		console.log(_validateLoginForm(form));
 		if (_validateLoginForm(form) === true) {
 			// ошибок заполнения формы нет - сбросим все сообщения об ошибках...
-			_clearLoginForm();
+			_clearLoginForm(form);
 
 			// ...и отдаём на бэкенд
 			$.ajax({
@@ -59,14 +61,12 @@ var loginModule = (function() {
 
 	// очищаем все инпуты в форме
 	// убираем все семафоры ошибок при закрытии окна загрузки проекта
-	var _clearLoginForm = function() {
-		var form = $("#login"),
-			inps = form.find('input, textarea'),
+	var _clearLoginForm = function(form) {
+		var	inps = form.find('input, textarea'),
 			msgs = form.find('.msg');
 
-		inps.each(function(index,input) {
+		inps.each(function() {
 			$(this).removeClass('err-input good-input').val(''); // убираем обводку и очищаем инпут
-			console.log($(this).prev());
 			$(this).prev().hide();  // скрываем тултип, он всегда идёт перед input
 		});
 		msgs.each(function() {
@@ -76,12 +76,12 @@ var loginModule = (function() {
 
 	// убираем семафоры ошибок при фокусе на поле
 	var _errorResetOnFocus = function () {
-		var inputLength = $(this).val().length
+		var inputLength = $(this).val().length;
 		// если в инпуте уже что-то введено — не удаляем
-		if (!inputLength) {
+		if (inputLength === 0) {
 			$(this).removeClass('err-input good-input').val(''); // убираем обводку и очищаем инпут
-		};
-			$(this).prev().hide();  // скрываем тултип, он всегда идёт перед input
+			};
+		$(this).prev().hide();  // скрываем тултип, он всегда идёт перед input
 	};
 
 	// проверка всех инпутов на наличие value

@@ -44,6 +44,7 @@
 	background: #3ba8c0;
 	transition: all 0.2s ease-in-out 0s;
 	opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /*IE8 fix*/
 	color: white;
 	position: absolute;
 	width: 100%;
@@ -54,12 +55,13 @@
 .works-item .hoverfx:hover,
 .works-item .hoverfx:active {
 	opacity: 0.85;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)"; /*IE8 fix*/
 }
 
-.ie8 .hoverfx {
+/*.ie8 .hoverfx {
 	display: none;
 }
-
+*/
 .works-item .hoverfx-inside {
 	margin: 44px auto 0;
 	padding: 4px;
